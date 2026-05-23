@@ -49,6 +49,14 @@
   .aff-btn { display: block; width: 100%; border-radius: 0.75rem; padding: 0.875rem 1rem; font-weight: 700; text-align: center; text-decoration: none; font-size: 0.95rem; transition: all 0.2s; margin-bottom: 0.75rem; }
   .aff-btn:hover { transform: translateY(-1px); opacity: 0.92; }
   .tip-item { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 0.5rem 0.5rem 0; padding: 0.75rem 1rem; margin-bottom: 0.5rem; font-size: 0.9rem; color: #374151; }
+
+/* Phase 8: Mobile Optimization */
+input, select, textarea { font-size: 16px !important; }
+button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min-width: 48px; touch-action: manipulation; }
+@media (max-width: 640px) {
+  body { font-size: 16px; }
+  .max-w-lg { padding-left: 1rem; padding-right: 1rem; }
+}
 </style>
 <script type="application/ld+json">
 {
