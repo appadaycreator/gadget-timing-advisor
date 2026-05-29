@@ -82,6 +82,8 @@ button, .btn, .btn-primary, .option-btn, [role="button"] { min-height: 48px; min
   a[href]::after{content:none!important}
 }
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+.related-link{padding:10px;text-align:center;border:1px solid #ddd;border-radius:4px;text-decoration:none;color:#333;display:block;transition:background 0.15s;}
+.related-link:hover{background:#f5f5f5;}
 </style>
 <script type="application/ld+json">
 {
@@ -564,10 +566,10 @@ function restart() {
 <section style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e0e0e0;">
   <h3 style="font-size: 18px; margin-bottom: 15px;">関連サービス</h3>
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
-    <a href="https://appadaycreator.com/camping-gear-advisor/" style="padding: 10px; text-align: center; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #333; display: block; hover:background: #f5f5f5;">キャンプ・アウトドア費用診断</a>
-    <a href="https://appadaycreator.com/baby-food-advisor/" style="padding: 10px; text-align: center; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #333; display: block; hover:background: #f5f5f5;">離乳食・ベビーフードアドバイザー</a>
-    <a href="https://appadaycreator.com/online-learning-advisor/" style="padding: 10px; text-align: center; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #333; display: block; hover:background: #f5f5f5;">オンライン学習費用診断</a>
-    <a href="https://appadaycreator.com/gift-idea-finder/" style="padding: 10px; text-align: center; border: 1px solid #ddd; border-radius: 4px; text-decoration: none; color: #333; display: block; hover:background: #f5f5f5;">ギフト・プレゼント選択診断</a>
+    <a href="https://appadaycreator.com/camping-gear-advisor/" class="related-link">キャンプ・アウトドア費用診断</a>
+    <a href="https://appadaycreator.com/baby-food-advisor/" class="related-link">離乳食・ベビーフードアドバイザー</a>
+    <a href="https://appadaycreator.com/online-learning-advisor/" class="related-link">オンライン学習費用診断</a>
+    <a href="https://appadaycreator.com/gift-idea-finder/" class="related-link">ギフト・プレゼント選択診断</a>
   </div>
 </section>
 
