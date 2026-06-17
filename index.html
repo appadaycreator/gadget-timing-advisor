@@ -1,6 +1,9 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
+<!-- Consent Mode v2 -->
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('consent','default',{'analytics_storage':'denied','ad_storage':'denied','ad_user_data':'denied','ad_personalization':'denied','wait_for_update':500});(function(){try{var k='cookie-consent-v2',o='cookie-consent';var c=localStorage.getItem(k);if(!c&&localStorage.getItem(o)==='1')c='granted';if(c){var s=c==='granted'?'granted':'denied';gtag('consent','update',{'analytics_storage':s,'ad_storage':s,'ad_user_data':s,'ad_personalization':s});}}catch(e){}})();</script>
+<!-- End Consent Mode v2 -->
 <!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({"gtm.start":
 new Date().getTime(),event:"gtm.js"});var f=d.getElementsByTagName(s)[0],
@@ -18,8 +21,9 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="manifest" href="manifest.json">
 <meta name="theme-color" content="#7c3aed">
-<meta name="description" content="現在の機種・使用年数・不満点から最適な買い替えタイミングを無料診断。損しない買い替え判断。登録不要・完全無料でご利用いただけます。スマホ・PC対応。">
-<meta name="keywords" content="スマホ買い替え,PC買い替え,タイミング診断,スマートフォン,パソコン,買い替え時期">
+<meta name="description" content="現在の機種・使用年数・不満点から最適な買い替えタイミングを無料診断。買い替え判定・複数パターン比較・シミュレーション機能搭載">
+<meta name="keywords" content="スマホ買い替えタイミング,PC買い替え時期,ガジェット診断,買い替え判断,シミュレーション,節約アドバイス">
+<meta name="author" content="AppADayCreator">
 <meta property="og:title" content="スマホ・PC買い替えタイミング診断【無料】今が替え時？">
 <meta property="og:description" content="使用年数・症状・使用目的から買い替えの緊急度を診断。賢い買い替え方法もアドバイス。">
 <meta property="og:type" content="website">
@@ -43,6 +47,7 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
 <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8427583028015858" crossorigin="anonymous"></script>
 
 <script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@3.9.1"></script>
 <style>
   body { background: #f8fafc; min-height: 100vh; }
   .site-header { background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%); }
@@ -136,9 +141,7 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
   ]
 }
 </script>
-<script type="application/ld+json">
 
-</script>
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -146,7 +149,11 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
   "name": "appadaycreator",
   "url": "https://appadaycreator.com",
   "logo": "https://appadaycreator.com/logo.png",
-  "description": "無料Webサービス・診断ツール 180種類以上を運営"
+  "description": "無料Webサービス・診断ツール 180種類以上を運営",
+  "sameAs": [
+    "https://twitter.com/appadaycreate",
+    "https://appadaycreator.com"
+  ]
 }
 </script>
 <meta property="og:type" content="website">
@@ -188,7 +195,25 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://appadaycreator.com/"},{"@type":"ListItem","position":2,"name":"診断/アドバイス","item":"https://appadaycreator.com/category/advisor/"},{"@type":"ListItem","position":3,"name":"スマホ・PC買い替えタイミング診断今が替え時？","item":"https://appadaycreator.com/gadget-timing-advisor/"}]}</script>
 </head>
 <body class="font-sans">
+<nav aria-label="パンくずリスト" style="background:#f8fafc;border-bottom:1px solid #e2e8f0;padding:6px 0;">
+  <div class="container mx-auto px-4">
+    <ol style="display:flex;flex-wrap:wrap;align-items:center;gap:4px;font-size:0.8rem;color:#6b7280;list-style:none;margin:0;padding:0;">
+      <li><a href="https://appadaycreator.com/" style="color:#4b5563;text-decoration:none;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#4b5563'">ホーム</a></li>
+      <li style="color:#9ca3af;">›</li>
+      <li><a href="https://appadaycreator.com/category/advisor/" style="color:#4b5563;text-decoration:none;" onmouseover="this.style.color='#2563eb'" onmouseout="this.style.color='#4b5563'">診断・アドバイス</a></li>
+      <li style="color:#9ca3af;">›</li>
+      <li style="color:#1f2937;">スマホ・PC買い替えタイミング診断今が替え時？</li>
+    </ol>
+  </div>
+</nav>
 <header class="site-hdr"><div class="site-hdr-in"><a href="https://appadaycreator.com/" class="site-hdr-back" aria-label="ホームへ">← ホーム</a><span class="site-hdr-title">📱 スマホ・PC買い替えタイミング診断</span><span class="site-hdr-badge">無料</span></div></header>
+<div style="background:#4338ca;padding:5px 12px;text-align:right;font-size:.78rem"><a href="/blog/" style="color:#c7d2fe;text-decoration:none;font-weight:600">📖 コラム</a>&nbsp;｜&nbsp;<a href="/" style="color:#c7d2fe;text-decoration:none">ホーム</a></div>
+<!-- r21-breadcrumb -->
+<nav aria-label="パンくずリスト" style="background:#f8fafc;border-bottom:1px solid #e2e8f0;padding:5px 16px;font-size:.78rem;color:#6b7280;overflow:hidden;white-space:nowrap;text-overflow:ellipsis">
+  <a href="/" style="color:#4f46e5;text-decoration:none">ホーム</a>
+  <span style="margin:0 .35rem;color:#9ca3af">›</span>
+  <span style="color:#374151">スマホ・PC買い替えタイミング診断【無料】今が替え時？</span>
+</nav>
 
 <a href="#main" class="sr-only">本文へスキップ</a>
 
@@ -198,7 +223,7 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
   <div id="screen-intro" class="screen active">
     <div class="hero-bg text-center mb-6 p-8">
       <div class="text-6xl mb-3">📱</div>
-      <h2 class="text-2xl font-bold text-blue-900 mb-2">スマホ・PC<br>買い替えタイミング診断</h2>
+      <h1 class="text-2xl font-bold text-blue-900 mb-2">スマホ・PC<br>買い替えタイミング診断</h1>
       <p class="text-blue-700 text-sm">6つの質問で、あなたの端末の<br>買い替え緊急度を判定します</p>
     </div>
     <div class="card p-6 mb-6 space-y-4">
@@ -268,12 +293,6 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
       <p class="text-sm text-gray-600" id="res-desc"></p>
     </div>
 
-    <!-- スコア内訳 -->
-    <div class="card p-6 mb-4">
-      <h3 class="font-bold text-gray-800 mb-3">📊 スコア内訳</h3>
-      <div id="score-breakdown" class="text-sm text-gray-700 space-y-2"></div>
-    </div>
-
     <!-- 買い替え方法アドバイス -->
     <div class="card p-6 mb-4">
       <h3 class="font-bold text-gray-800 mb-3">💡 おすすめの買い替え方法</h3>
@@ -284,6 +303,76 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
     <div class="card p-6 mb-4">
       <h3 class="font-bold text-gray-800 mb-3">💰 節約ポイント</h3>
       <div id="saving-tips"></div>
+    </div>
+
+    <!-- スコアゲージ（Chart.js） -->
+    <div class="card p-6 mb-4">
+      <h3 class="font-bold text-gray-800 mb-3">📊 スコア可視化</h3>
+      <canvas id="scoreGaugeChart" style="max-height:120px;"></canvas>
+      <p style="font-size:0.8rem;color:#6b7280;margin-top:8px;text-align:center;">スコア：<span id="gauge-score-text">0</span>点（0-100）</p>
+    </div>
+
+    <!-- 質問別寄与度グラフ -->
+    <div class="card p-6 mb-4">
+      <h3 class="font-bold text-gray-800 mb-3">📈 質問別スコア内訳</h3>
+      <canvas id="contributionChart" style="max-height:200px;"></canvas>
+    </div>
+
+    <!-- M7: 比較・シミュレーション機能 -->
+    <div class="card p-6 mb-4">
+      <h3 class="font-bold text-gray-800 mb-3">🔄 条件を変えてシミュレーション</h3>
+      <p class="text-sm text-gray-600 mb-4">下の項目を変更すると、その場で新しいスコアが計算されます</p>
+
+      <div id="sim-controls" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; margin-bottom: 16px;">
+        <!-- ここに動的に項目が追加される -->
+      </div>
+
+      <button id="sim-reset-btn" class="btn-secondary" style="font-size:0.9rem;margin-bottom:16px;" onclick="resetSimulation()" aria-label="シミュレーション設定をリセット">
+        ↺ 元の設定に戻す
+      </button>
+
+      <div id="sim-result" style="display: none; padding: 16px; background: #f8fafc; border-radius: 8px; margin-top: 12px;">
+        <div style="display: flex; align-items: center; gap: 12px; margin-bottom: 12px;">
+          <div class="score-circle" id="sim-score-circle" style="width: 80px; height: 80px;">
+            <div class="text-2xl font-bold" id="sim-score-num">0</div>
+            <div class="text-xs font-bold mt-1">点</div>
+          </div>
+          <div style="flex: 1;">
+            <div class="font-bold text-lg" id="sim-judgment" style="color: #2563eb;"></div>
+            <div class="text-xs text-gray-500" id="sim-judgment-sub"></div>
+          </div>
+        </div>
+        <p class="text-sm text-gray-700" id="sim-desc"></p>
+      </div>
+    </div>
+
+    <!-- 複数パターン比較テーブル -->
+    <div class="card p-6 mb-4" id="comparison-card" style="display: none;">
+      <h3 class="font-bold text-gray-800 mb-3">📊 複数パターン比較</h3>
+      <div style="overflow-x: auto; -webkit-overflow-scrolling: touch;">
+        <table id="comparison-table" style="width: 100%; border-collapse: collapse; font-size: 0.85rem;">
+          <thead>
+            <tr style="background: #f8fafc; border-bottom: 2px solid #e2e8f0;">
+              <th style="padding: 8px; text-align: left; font-weight: 700; color: #1f2937;">パターン</th>
+              <th style="padding: 8px; text-align: center; font-weight: 700; color: #1f2937;">スコア</th>
+              <th style="padding: 8px; text-align: left; font-weight: 700; color: #1f2937;">判定</th>
+              <th style="padding: 8px; text-align: center; font-weight: 700; color: #1f2937;">アクション</th>
+            </tr>
+          </thead>
+          <tbody id="comparison-table-body">
+            <!-- 動的に追加される -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 過去の診断履歴 -->
+    <div class="card p-6 mb-4">
+      <h3 class="font-bold text-gray-800 mb-3">📝 過去の診断履歴</h3>
+      <div id="history-list" style="max-height:300px;overflow-y:auto;"></div>
+      <button class="btn-secondary" style="margin-top:12px;font-size:0.9rem;" onclick="clearAllHistory()" aria-label="履歴をクリア">
+        🗑️ 履歴を全削除
+      </button>
     </div>
 
     <!-- AdSense広告 -->
@@ -303,24 +392,23 @@ ins.adsbygoogle[data-ad-status="unfilled"]{display:none!important;margin:0!impor
             <p class="text-xs text-gray-400 text-center">※A8.netアフィリエイトプログラムを利用しています</p>
     </div>
 
+    <!-- クロスリンク -->
+    <div class="card p-4 mb-4">
+      <h3 class="font-bold text-gray-800 mb-3 text-sm">🔗 あわせて確認しよう</h3>
+      <div class="space-y-2">
+        <a href="https://appadaycreator.com/smartphone-advisor/" class="flex items-center gap-2 text-sm text-blue-600 hover:underline">
+          <span>📱</span><span>キャリア・プランを見直す → smartphone-advisor</span>
+        </a>
+        <a href="https://appadaycreator.com/subscription-calculator/" class="flex items-center gap-2 text-sm text-blue-600 hover:underline">
+          <span>📋</span><span>サブスクを整理する → subscription-calculator</span>
+        </a>
+        <a href="https://appadaycreator.com/internet-plan-advisor/" class="flex items-center gap-2 text-sm text-blue-600 hover:underline">
+          <span>🌐</span><span>格安SIMに乗り換える → internet-plan-advisor</span>
+        </a>
+      </div>
+    </div>
 
     <button class="btn-secondary" onclick="restart()" aria-label="もう一度診断する">もう一度診断する</button>
-  </div>
-
-  <!-- 関連サービス -->
-  <div class="card p-4 mb-4">
-    <h3 class="font-bold text-gray-800 mb-3 text-sm">🔗 関連サービスもチェック</h3>
-    <div class="space-y-2">
-      <a href="https://appadaycreator.com/smartphone-advisor/" class="flex items-center gap-2 text-sm text-blue-600 hover:underline">
-        <span>📱</span><span>スマートフォン・プラン選択診断</span>
-      </a>
-      <a href="https://appadaycreator.com/internet-plan-advisor/" class="flex items-center gap-2 text-sm text-blue-600 hover:underline">
-        <span>🌐</span><span>格安SIM・インターネット選択診断</span>
-      </a>
-      <a href="https://appadaycreator.com/subscription-calculator/" class="flex items-center gap-2 text-sm text-blue-600 hover:underline">
-        <span>📋</span><span>サブスク整理・家計診断</span>
-      </a>
-    </div>
   </div>
 
 </div>
@@ -334,10 +422,11 @@ var Qs = [
     scores: [0, 10, 25, 45, 65]
   },
   {
-    text: "Q2: 困っていることは？",
+    text: "Q2: 困っていることは？（複数選択可）",
     opts: ["バッテリーが持たない","動作が遅い（フリーズ多い）","ストレージ不足","画面割れ・物理破損","カメラ品質が不満","特に問題なし"],
     key: "problem",
-    scores: [30, 25, 20, 30, 15, 0]
+    scores: [25, 20, 15, 35, 10, 0],
+    multiSelect: true
   },
   {
     text: "Q3: 主な使用目的は？",
@@ -451,7 +540,7 @@ var resultData = {
 var cur = 0, ans = {}, totalScore = 0;
 
 function startDiagnosis() {
-  gtag('event', 'quiz_start', { event_category: 'engagement' });
+  try { gtag('event', 'quiz_start', { event_category: 'engagement' }); } catch(e) {}
   show('questions');
   renderQ();
 }
@@ -471,14 +560,61 @@ function renderQ() {
   document.getElementById('q-text').textContent = q.text;
   document.getElementById('back-btn').style.display = (cur > 0) ? 'block' : 'none';
   var c = document.getElementById('opts'); c.innerHTML = '';
-  q.opts.forEach(function(opt, i) {
-    var b = document.createElement('button');
-    b.className = 'option-btn';
-    if (ans[q.key] && ans[q.key].i === i) b.classList.add('selected');
-    b.textContent = opt;
-    b.onclick = function() { pick(i, opt, q.key, q.scores[i]); };
-    c.appendChild(b);
-  });
+
+  if (q.multiSelect) {
+    // 複数選択モード（チェックボックスUI）
+    var prevSelected = (ans[q.key] && ans[q.key].selected) ? ans[q.key].selected : [];
+    q.opts.forEach(function(opt, i) {
+      var label = document.createElement('label');
+      label.className = 'option-btn';
+      label.style.display = 'flex';
+      label.style.alignItems = 'center';
+      label.style.gap = '10px';
+      label.style.cursor = 'pointer';
+      var cb = document.createElement('input');
+      cb.type = 'checkbox';
+      cb.value = i;
+      cb.style.width = '18px';
+      cb.style.height = '18px';
+      cb.style.flexShrink = '0';
+      cb.style.accentColor = '#2563eb';
+      if (prevSelected.indexOf(i) !== -1) {
+        cb.checked = true;
+        label.classList.add('selected');
+      }
+      cb.onchange = function() {
+        if (cb.checked) label.classList.add('selected');
+        else label.classList.remove('selected');
+      };
+      var span = document.createElement('span');
+      span.textContent = opt;
+      label.appendChild(cb);
+      label.appendChild(span);
+      c.appendChild(label);
+    });
+    var hint = document.createElement('p');
+    hint.style.fontSize = '12px';
+    hint.style.color = '#9ca3af';
+    hint.style.marginTop = '6px';
+    hint.style.textAlign = 'center';
+    hint.textContent = '※ 複数選択できます';
+    c.appendChild(hint);
+    var nextBtn = document.createElement('button');
+    nextBtn.className = 'btn-primary';
+    nextBtn.style.marginTop = '10px';
+    nextBtn.textContent = '次へ →';
+    nextBtn.onclick = function() { pickMulti(q.key, q.scores); };
+    c.appendChild(nextBtn);
+  } else {
+    q.opts.forEach(function(opt, i) {
+      var b = document.createElement('button');
+      b.className = 'option-btn';
+      if (ans[q.key] && ans[q.key].i === i) b.classList.add('selected');
+      b.textContent = opt;
+      b.onclick = function() { pick(i, opt, q.key, q.scores[i]); };
+      c.appendChild(b);
+    });
+  }
 }
 
 function pick(i, val, key, score) {
@@ -496,6 +632,33 @@ function pick(i, val, key, score) {
   }, 300);
 }
 
+function pickMulti(key, scores) {
+  var checkboxes = document.querySelectorAll('#opts input[type="checkbox"]');
+  var selected = [];
+  var totalScore = 0;
+  checkboxes.forEach(function(cb) {
+    if (cb.checked) {
+      var i = parseInt(cb.value);
+      selected.push(i);
+      totalScore += (scores[i] || 0);
+    }
+  });
+  // 未選択の場合は「特に問題なし」として扱う
+  if (selected.length === 0) {
+    selected = [scores.length - 1];
+    totalScore = 0;
+  }
+  ans[key] = { selected: selected, score: totalScore };
+  cur++;
+  if (cur < Qs.length) {
+    renderQ();
+  } else {
+    show('loading');
+    try { gtag('event', 'quiz_complete', { event_category: 'engagement' }); } catch(e) {}
+    setTimeout(showResults, 300);
+  }
+}
+
 function goBack() {
   if (cur > 0) {
     cur--;
@@ -507,15 +670,21 @@ function showResults() {
   // スコア計算（全問での総得点）
   var rawScore = 0;
   Object.keys(ans).forEach(function(k) { rawScore += (ans[k].score || 0); });
-  // 最大値 180 から 0-100 に正規化
-  totalScore = Math.round((rawScore / 180) * 100);
+  // 最大値 175 から 0-100 に正規化
+  totalScore = Math.round((rawScore / 175) * 100);
   totalScore = Math.min(100, Math.max(0, totalScore));
+
+  // M7: 元の診断結果を保存
+  window.originalScore = totalScore;
 
   var level;
   if (totalScore >= 70) level = 'urgent';
   else if (totalScore >= 45) level = 'soon';
   else if (totalScore >= 20) level = 'later';
   else level = 'ok';
+
+  // M7: 元のレベルを保存
+  window.originalLevel = level;
 
   var data = resultData[level];
   var methodIdx = ans.method ? ans.method.i : 4;
@@ -528,20 +697,6 @@ function showResults() {
   document.getElementById('res-judgment').style.color = data.judgmentColor;
   document.getElementById('res-judgment-sub').textContent = data.judgmentSub;
   document.getElementById('res-desc').textContent = data.desc;
-
-  // スコア内訳を表示
-  var breakdownEl = document.getElementById('score-breakdown');
-  var breakdownHTML = '';
-  var questionLabels = ['使用年数', '困っていること', '使用目的', 'OSサポート', '買い替え予算', '買い替え方法'];
-  var qIdx = 0;
-  Object.keys(ans).forEach(function(k) {
-    var score = ans[k].score || 0;
-    var label = questionLabels[qIdx] || k;
-    var barWidth = Math.round((score / 30) * 100);
-    breakdownHTML += '<div style="margin-bottom:8px;"><div style="font-size:12px;color:#475569;margin-bottom:2px;">' + label + ': <strong>' + score + '点</strong></div><div style="background:#e5e7eb;border-radius:4px;height:6px;overflow:hidden;"><div style="background:#2563eb;height:100%;width:' + barWidth + '%;border-radius:4px;transition:width 0.3s;"></div></div></div>';
-    qIdx++;
-  });
-  breakdownEl.innerHTML = breakdownHTML;
 
   // 買い替え方法
   document.getElementById('method-advice').innerHTML = '<div class="tip-item">' + methodText + '</div>';
@@ -557,7 +712,27 @@ function showResults() {
   });
 
   show('results');
-  gtag('event', 'result_view', { event_category: 'conversion', level: level, score: totalScore });
+  try { gtag('event', 'result_view', { event_category: 'conversion', level: level, score: totalScore }); } catch(e) {}
+
+  // SNSシェアテキストにスコアと判定を動的に反映
+  var shareText = 'スマホ・PC買い替え診断 ' + totalScore + '点（' + data.judgment + '）';
+  var shareUrl = 'https://appadaycreator.com/gadget-timing-advisor/';
+  var lineEl = document.getElementById('share-line');
+  if (lineEl) lineEl.href = 'https://line.me/R/share?text=' + encodeURIComponent(shareText + ' ' + shareUrl);
+  var xEl = document.getElementById('share-x');
+  if (xEl) xEl.href = 'https://twitter.com/intent/tweet?text=' + encodeURIComponent(shareText) + '&url=' + encodeURIComponent(shareUrl) + '&via=appadaycreator';
+
+  // M3: 履歴を localStorage に保存
+  saveToHistory(ans, level, totalScore);
+
+  // M4: グラフを描画
+  setTimeout(function() {
+    renderScoreGauge(totalScore, level);
+    renderContributionChart(ans);
+    renderHistoryList();
+    // M7: シミュレーション機能を初期化
+    initSimulationControls(ans);
+  }, 300);
 }
 
 function restart() {
@@ -566,43 +741,661 @@ function restart() {
   totalScore = 0;
   show('intro');
 }
+
+// M3: localStorage にデータを保存する関数
+function saveToHistory(ans, level, score) {
+  try {
+    var history = JSON.parse(localStorage.getItem('gadgetDiagnosisHistory') || '[]');
+    var entry = {
+      timestamp: new Date().toISOString(),
+      ans: ans,
+      level: level,
+      score: score
+    };
+    history.unshift(entry);
+    // 最大5件まで保持
+    if (history.length > 5) history.pop();
+    localStorage.setItem('gadgetDiagnosisHistory', JSON.stringify(history));
+  } catch(e) {
+  }
+}
+
+// 過去の診断履歴を復元・表示する関数
+function renderHistoryList() {
+  var historyListEl = document.getElementById('history-list');
+  try {
+    var history = JSON.parse(localStorage.getItem('gadgetDiagnosisHistory') || '[]');
+    if (history.length === 0) {
+      historyListEl.innerHTML = '<p style="color:#9ca3af;text-align:center;font-size:0.9rem;">過去の診断はまだありません</p>';
+      return;
+    }
+    var html = '<div style="display:grid;grid-template-columns:1fr;gap:8px;">';
+    history.forEach(function(item, idx) {
+      var date = new Date(item.timestamp);
+      var dateStr = date.toLocaleString('ja-JP', { month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' });
+      var levelLabel = {
+        'urgent': '今すぐ',
+        'soon': '半年以内',
+        'later': '1年以内',
+        'ok': 'まだ大丈夫'
+      }[item.level] || '';
+      html += '<button style="text-align:left;padding:10px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:8px;cursor:pointer;transition:all 0.2s;" onmouseover="this.style.background=\'#eff6ff\'" onmouseout="this.style.background=\'#f8fafc\'" onclick="restoreFromHistory(' + idx + ')">';
+      html += '<div style="font-weight:700;color:#1f2937;">' + item.score + '点 - ' + levelLabel + '</div>';
+      html += '<div style="font-size:0.8rem;color:#9ca3af;">' + dateStr + '</div>';
+      html += '</button>';
+    });
+    html += '</div>';
+    historyListEl.innerHTML = html;
+  } catch(e) {
+  }
+}
+
+// 過去の診断データを復元する関数
+function restoreFromHistory(index) {
+  try {
+    var history = JSON.parse(localStorage.getItem('gadgetDiagnosisHistory') || '[]');
+    if (index < history.length) {
+      var entry = history[index];
+      ans = entry.ans;
+      cur = Qs.length; // 全問回答済みにする
+      totalScore = entry.score;
+      showResults();
+      window.scrollTo(0, 0);
+    }
+  } catch(e) {
+    
+  }
+}
+
+// 全履歴を削除する関数
+function clearAllHistory() {
+  if (confirm('本当に全ての履歴を削除しますか？')) {
+    try {
+      localStorage.removeItem('gadgetDiagnosisHistory');
+      renderHistoryList();
+    } catch(e) {
+    }
+  }
+}
+
+// M4: スコアゲージを描画する関数
+function renderScoreGauge(score, level) {
+  var canvas = document.getElementById('scoreGaugeChart');
+  if (!canvas || !window.Chart) return;
+
+  var ctx = canvas.getContext('2d');
+  if (window.scoreGaugeChart) window.scoreGaugeChart.destroy();
+
+  var colors = {
+    'ok': '#2563eb',
+    'later': '#059669',
+    'soon': '#d97706',
+    'urgent': '#ef4444'
+  };
+
+  window.scoreGaugeChart = new Chart(ctx, {
+    type: 'doughnut',
+    data: {
+      labels: ['スコア', '残り'],
+      datasets: [{
+        data: [score, 100 - score],
+        backgroundColor: [colors[level], '#e5e7eb'],
+        borderColor: ['#fff', '#fff'],
+        borderWidth: 2
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: true,
+      plugins: {
+        legend: { display: false },
+        tooltip: { enabled: true }
+      }
+    }
+  });
+
+  document.getElementById('gauge-score-text').textContent = score;
+}
+
+// 質問別寄与度グラフを描画する関数
+function renderContributionChart(ans) {
+  var canvas = document.getElementById('contributionChart');
+  if (!canvas || !window.Chart) return;
+
+  var ctx = canvas.getContext('2d');
+  if (window.contributionChart) window.contributionChart.destroy();
+
+  var labels = ['使用年数', '困っていること', '使用目的', 'OSサポート', '予算', '購入方法'];
+  var scores = [];
+  labels.forEach(function(_, i) {
+    var q = Qs[i];
+    if (ans[q.key]) {
+      scores.push(ans[q.key].score || 0);
+    } else {
+      scores.push(0);
+    }
+  });
+
+  window.contributionChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: labels,
+      datasets: [{
+        label: 'スコア寄与度',
+        data: scores,
+        backgroundColor: '#2563eb',
+        borderColor: '#1d4ed8',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      responsive: true,
+      maintainAspectRatio: true,
+      indexAxis: 'y',
+      plugins: {
+        legend: { display: true, position: 'top' }
+      },
+      scales: {
+        x: {
+          beginAtZero: true,
+          max: 50
+        }
+      }
+    }
+  });
+}
+
+// M7: シミュレーション機能の初期化
+var simAns = {}; // シミュレーション用の回答を保持
+function initSimulationControls(ans) {
+  simAns = JSON.parse(JSON.stringify(ans)); // ディープコピー
+  var controlsEl = document.getElementById('sim-controls');
+  controlsEl.innerHTML = '';
+
+  // 各質問について、シミュレーション用のコントロールを作成
+  Qs.forEach(function(q, i) {
+    if (q.multiSelect) {
+      // 複数選択の場合はチェックボックスグループ
+      var wrapper = document.createElement('div');
+      wrapper.style.gridColumn = 'span 1';
+      wrapper.innerHTML = '<div style="font-weight: 600; color: #374151; margin-bottom: 8px; font-size: 0.85rem;">' + q.text.split(':')[1].trim().substring(0, 20) + '...</div>';
+      var container = document.createElement('div');
+      container.style.display = 'flex';
+      container.style.flexDirection = 'column';
+      container.style.gap = '6px';
+      q.opts.forEach(function(opt, j) {
+        var label = document.createElement('label');
+        label.style.display = 'flex';
+        label.style.alignItems = 'center';
+        label.style.gap = '6px';
+        label.style.cursor = 'pointer';
+        label.style.fontSize = '0.85rem';
+        var cb = document.createElement('input');
+        cb.type = 'checkbox';
+        cb.value = j;
+        cb.style.cursor = 'pointer';
+        if (simAns[q.key] && simAns[q.key].selected && simAns[q.key].selected.indexOf(j) !== -1) {
+          cb.checked = true;
+        }
+        cb.onchange = function() { updateSimulation(); };
+        label.appendChild(cb);
+        label.appendChild(document.createTextNode(opt));
+        container.appendChild(label);
+      });
+      wrapper.appendChild(container);
+      controlsEl.appendChild(wrapper);
+    } else {
+      // 単一選択の場合は select ドロップダウン
+      var wrapper = document.createElement('div');
+      wrapper.style.gridColumn = 'span 1';
+      var label = document.createElement('label');
+      label.style.display = 'block';
+      label.style.fontSize = '0.85rem';
+      label.style.fontWeight = '600';
+      label.style.marginBottom = '6px';
+      label.style.color = '#374151';
+      label.textContent = q.text.split(':')[1].trim().substring(0, 30);
+      var select = document.createElement('select');
+      select.style.width = '100%';
+      select.style.padding = '8px';
+      select.style.borderRadius = '4px';
+      select.style.border = '1px solid #d1d5db';
+      select.style.fontSize = '0.9rem';
+      select.style.cursor = 'pointer';
+      select.onchange = function() { updateSimulation(); };
+      q.opts.forEach(function(opt, j) {
+        var option = document.createElement('option');
+        option.value = j;
+        option.textContent = opt;
+        if (simAns[q.key] && simAns[q.key].i === j) {
+          option.selected = true;
+        }
+        select.appendChild(option);
+      });
+      wrapper.appendChild(label);
+      wrapper.appendChild(select);
+      wrapper.style.display = 'flex';
+      wrapper.style.flexDirection = 'column';
+      controlsEl.appendChild(wrapper);
+    }
+  });
+
+  updateSimulation();
+}
+
+// シミュレーション結果の更新
+function updateSimulation() {
+  var controlsEl = document.getElementById('sim-controls');
+  var selects = controlsEl.querySelectorAll('select');
+  var checkboxGroups = controlsEl.querySelectorAll('input[type="checkbox"]');
+
+  // シミュレーション用の回答を更新（select）
+  var selectIdx = 0;
+  Qs.forEach(function(q, i) {
+    if (!q.multiSelect && selectIdx < selects.length) {
+      var selectedIdx = parseInt(selects[selectIdx].value);
+      simAns[q.key] = { i: selectedIdx, val: q.opts[selectedIdx], score: q.scores[selectedIdx] };
+      selectIdx++;
+    }
+  });
+
+  // 複数選択の更新
+  var checkboxIdx = 0;
+  Qs.forEach(function(q, i) {
+    if (q.multiSelect) {
+      var selected = [];
+      var score = 0;
+      var checkboxes = [];
+      for (var k = 0; k < q.opts.length; k++) {
+        for (var c = 0; c < checkboxGroups.length; c++) {
+          if (checkboxGroups[c].parentElement.parentElement.querySelector('input[type="checkbox"][value="' + k + '"]') === checkboxGroups[c]) {
+            checkboxes.push(checkboxGroups[c]);
+          }
+        }
+      }
+      // より簡潔に: q に対応するチェックボックスをまとめて取得
+      var qCheckboxes = Array.from(checkboxGroups).filter(function(cb) {
+        return cb.value < q.opts.length;
+      });
+      if (qCheckboxes.length > 0 && checkboxIdx < Qs.filter(function(x) { return x.multiSelect; }).length) {
+        var startIdx = checkboxIdx === 0 ? 0 : Qs.slice(0, i).filter(function(x) { return x.multiSelect; }).length * q.opts.length;
+        qCheckboxes = Array.from(checkboxGroups).slice(startIdx, startIdx + q.opts.length);
+        qCheckboxes.forEach(function(cb) {
+          if (cb.checked) {
+            var idx = parseInt(cb.value);
+            selected.push(idx);
+            score += q.scores[idx] || 0;
+          }
+        });
+        if (selected.length === 0) {
+          selected = [q.opts.length - 1];
+          score = 0;
+        }
+        simAns[q.key] = { selected: selected, score: score };
+        checkboxIdx++;
+      }
+    }
+  });
+
+  // スコア計算
+  var rawScore = 0;
+  Object.keys(simAns).forEach(function(k) { rawScore += (simAns[k].score || 0); });
+  var simScore = Math.round((rawScore / 175) * 100);
+  simScore = Math.min(100, Math.max(0, simScore));
+
+  // レベル判定
+  var simLevel;
+  if (simScore >= 70) simLevel = 'urgent';
+  else if (simScore >= 45) simLevel = 'soon';
+  else if (simScore >= 20) simLevel = 'later';
+  else simLevel = 'ok';
+
+  // 結果表示
+  var data = resultData[simLevel];
+  var simResultEl = document.getElementById('sim-result');
+  simResultEl.style.display = 'block';
+  document.getElementById('sim-score-circle').className = 'score-circle ' + data.circleClass;
+  document.getElementById('sim-score-num').textContent = simScore;
+  document.getElementById('sim-judgment').textContent = data.judgment;
+  document.getElementById('sim-judgment').style.color = data.judgmentColor;
+  document.getElementById('sim-judgment-sub').textContent = data.judgmentSub;
+  document.getElementById('sim-desc').textContent = data.desc;
+
+  // 比較テーブルに行を追加
+  var tableBody = document.getElementById('comparison-table-body');
+  var compCard = document.getElementById('comparison-card');
+
+  // 元の結果行が存在しない場合は追加
+  var originalRow = tableBody.querySelector('tr[data-result="original"]');
+  if (!originalRow && window.originalScore !== undefined) {
+    originalRow = document.createElement('tr');
+    originalRow.setAttribute('data-result', 'original');
+    originalRow.style.background = '#f0f9ff';
+    originalRow.style.borderBottom = '1px solid #e2e8f0';
+    var origData = resultData[window.originalLevel] || resultData['ok'];
+    originalRow.innerHTML = '<td style="padding: 8px; font-weight: 600; color: #1f2937;">元の診断</td>' +
+      '<td style="padding: 8px; text-align: center; font-weight: 700; color: ' + origData.judgmentColor + ';">' + window.originalScore + '点</td>' +
+      '<td style="padding: 8px; color: #374151;">' + origData.judgment + '</td>' +
+      '<td style="padding: 8px; text-align: center;">-</td>';
+    tableBody.appendChild(originalRow);
+  }
+
+  // 既存のシミュレーション行を見つけるか新しい行を作成
+  var existingRow = tableBody.querySelector('tr[data-result="current"]');
+  if (!existingRow) {
+    existingRow = document.createElement('tr');
+    existingRow.setAttribute('data-result', 'current');
+    existingRow.style.background = '#f0fdf4';
+    existingRow.style.borderBottom = '1px solid #e2e8f0';
+    tableBody.appendChild(existingRow);
+  }
+
+  existingRow.innerHTML = '<td style="padding: 8px; font-weight: 600; color: #1f2937;">シミュレーション</td>' +
+    '<td style="padding: 8px; text-align: center; font-weight: 700; color: ' + data.judgmentColor + ';">' + simScore + '点</td>' +
+    '<td style="padding: 8px; color: #374151;">' + data.judgment + '</td>' +
+    '<td style="padding: 8px; text-align: center;"><button onclick="saveSimulationPattern()" style="background: #2563eb; color: white; border: none; border-radius: 4px; padding: 4px 8px; font-size: 0.8rem; cursor: pointer;">保存</button></td>';
+
+  compCard.style.display = 'block';
+}
+
+// シミュレーション設定をリセット
+function resetSimulation() {
+  simAns = JSON.parse(JSON.stringify(ans)); // 元の回答に戻す
+  initSimulationControls(ans);
+}
+
+// シミュレーション結果を保存
+function saveSimulationPattern() {
+  if (confirm('このシミュレーション結果を比較テーブルに追加しますか？')) {
+    var rawScore = 0;
+    Object.keys(simAns).forEach(function(k) { rawScore += (simAns[k].score || 0); });
+    var score = Math.round((rawScore / 175) * 100);
+    score = Math.min(100, Math.max(0, score));
+
+    var level = 'ok';
+    if (score >= 70) level = 'urgent';
+    else if (score >= 45) level = 'soon';
+    else if (score >= 20) level = 'later';
+
+    // 比較テーブルに新しい行を追加
+    var tableBody = document.getElementById('comparison-table-body');
+    var savedRow = document.createElement('tr');
+    savedRow.style.background = '#fef3c7';
+    savedRow.style.borderBottom = '1px solid #e2e8f0';
+    var data = resultData[level] || resultData['ok'];
+    var patternNum = tableBody.querySelectorAll('tr[data-saved-pattern]').length + 1;
+    savedRow.setAttribute('data-saved-pattern', patternNum);
+    savedRow.innerHTML = '<td style="padding: 8px; font-weight: 600; color: #1f2937;">パターン' + patternNum + '</td>' +
+      '<td style="padding: 8px; text-align: center; font-weight: 700; color: ' + data.judgmentColor + ';">' + score + '点</td>' +
+      '<td style="padding: 8px; color: #374151;">' + data.judgment + '</td>' +
+      '<td style="padding: 8px; text-align: center;"><button onclick="this.parentElement.parentElement.remove()" style="background: #ef4444; color: white; border: none; border-radius: 4px; padding: 4px 8px; font-size: 0.8rem; cursor: pointer;">削除</button></td>';
+    tableBody.appendChild(savedRow);
+
+    // 診断履歴にも保存
+    saveToHistory(simAns, level, score);
+    renderHistoryList();
+    alert('パターン' + patternNum + 'を比較テーブルに追加しました！');
+  }
+}
+
+// ページロード時に初期化
+window.addEventListener('DOMContentLoaded', function() {
+  // 結果画面で履歴を表示（最初は hidden）
+  var resultsScreen = document.getElementById('screen-results');
+  if (resultsScreen && !resultsScreen.classList.contains('active')) {
+    // renderHistoryList() は showResults() 後に実行される
+  }
+});
 </script>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"スマホ・PC買い替えタイミング診断【無料】今が替え時？","description":"現在の機種・使用年数・不満点から最適な買い替えタイミングを無料診断。損しない買い替え判断。","url":"https://appadaycreator.com/gadget-timing-advisor/","applicationCategory":"UtilityApplication","operatingSystem":"Any","inLanguage":"ja","offers":{"@type":"Offer","price":"0","priceCurrency":"JPY"}}</script>
 
-<div class="max-w-2xl mx-auto px-4">
-<!-- phase8-social-proof -->
-    <div class="card p-5 mb-4">
-      <h3 class="font-bold text-gray-800 mb-3 text-sm">⭐ 利用者の声</h3>
-      <div class="space-y-3">
-        <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:12px;">
-          <p class="text-xs text-gray-700">「3年半使ったiPhoneで診断したらスコア78点。すぐ買い替え推奨で、格安SIMへの乗り換えも提案してくれて一石二鳥でした！」</p>
-          <p style="font-size:12px;color:#2563eb;" class="mt-1">— 田中さん（30代・会社員）★★★★★</p>
-        </div>
-        <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:12px;">
-          <p class="text-xs text-gray-700">「バッテリーがすぐ切れて悩んでいたが、「今すぐ買い替え」と出て決断できました。下取りの活用も教えてもらえて節約になった。」</p>
-          <p style="font-size:12px;color:#2563eb;" class="mt-1">— 佐藤さん（40代・会社員）★★★★★</p>
-        </div>
-        <div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:8px;padding:12px;">
-          <p class="text-xs text-gray-700">「まだ買い替えなくていいと診断されて節約できました。具体的な節約ポイントも参考になりました。」</p>
-          <p style="font-size:12px;color:#2563eb;" class="mt-1">— 山本さん（20代・学生）★★★★☆</p>
-        </div>
-      </div>
-      <div class="flex gap-2 mt-4">
-        <a href="https://line.me/R/share?text=スマホ・PC買い替えタイミング診断今が替え時？%20https://appadaycreator.com/gadget-timing-advisor/" target="_blank" rel="noopener"
-           style="flex:1;display:block;text-align:center;background:#06C755;color:white;padding:8px;border-radius:8px;font-size:12px;font-weight:bold;text-decoration:none;">
-          LINEでシェア
-        </a>
-        <a href="https://twitter.com/intent/tweet?text=スマホ・PC買い替えタイミング診断今が替え時？&url=https://appadaycreator.com/gadget-timing-advisor/&via=appadaycreator" target="_blank" rel="noopener"
-           style="flex:1;display:block;text-align:center;background:#000;color:white;padding:8px;border-radius:8px;font-size:12px;font-weight:bold;text-decoration:none;">
-          Xでシェア
-        </a>
-      </div>
+<div style="max-width:512px;margin:0 auto;padding:0 16px;">
+<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:10px;padding:16px;margin:12px 0;">
+  <h2 style="font-size:15px;font-weight:700;margin-bottom:10px;color:#1e40af;">📖 使い方</h2>
+  <ol style="padding-left:20px;font-size:13px;color:#475569;line-height:1.9;">
+    <li><strong>診断スタート</strong>：「診断スタート」ボタンをタップ</li>
+    <li><strong>6問に回答</strong>：使用年数・症状・使用目的・買い替え方法の好みを選択</li>
+    <li><strong>緊急度を確認</strong>：0〜100点のスコアと買い替え判定・節約アドバイスを確認</li>
+  </ol>
+</div>
+<div style="text-align:center;padding:8px;font-size:11px;"><a href="privacy-policy.html" style="color:inherit;font-size:11px;opacity:0.7;text-decoration:underline;">プライバシーポリシー</a></div>
+<section style="background:#f8fafc;border-top:1px solid #e2e8f0;padding:24px 16px;margin-top:16px;max-width:720px;margin-left:auto;margin-right:auto;">
+  <h2 style="font-size:16px;font-weight:700;color:#1e293b;margin:0 0 16px;text-align:center;">❓ よくある質問（FAQ）</h2>
+  <div style="max-width:680px;margin:0 auto;">
+    <details style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:8px;overflow:hidden;">
+      <summary style="padding:12px 16px;cursor:pointer;font-size:14px;font-weight:600;color:#334155;background:#fff;list-style:none;display:flex;justify-content:space-between;align-items:center;">Q. スマホとPCのどちらの診断にも使えますか？ <span>▼</span></summary>
+      <p style="padding:12px 16px;font-size:13px;color:#475569;margin:0;background:#f8fafc;">はい、スマートフォン・タブレット・PCのいずれにも対応しています。使用年数と症状を正直に入力することで、より正確な診断結果が得られます。</p>
+    </details>
+    <details style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:8px;overflow:hidden;">
+      <summary style="padding:12px 16px;cursor:pointer;font-size:14px;font-weight:600;color:#334155;background:#fff;list-style:none;display:flex;justify-content:space-between;align-items:center;">Q. 買い替えタイミングを見極めるコツは？ <span>▼</span></summary>
+      <p style="padding:12px 16px;font-size:13px;color:#475569;margin:0;background:#f8fafc;">バッテリーが1日もたない、動作が著しく遅い、OSアップデートが非対応になった場合は買い替えのサインです。また新モデル発売前後は旧機種が値下がりするため、時期の見極めも重要です。</p>
+    </details>
+    
+    
+    <details style="border:1px solid #e2e8f0;border-radius:8px;margin-bottom:8px;overflow:hidden;">
+      <summary style="padding:12px 16px;cursor:pointer;font-size:14px;font-weight:600;color:#334155;background:#fff;list-style:none;display:flex;justify-content:space-between;align-items:center;">Q. 機種や条件を変えて買い替え時期を再診断できますか？ <span>▼</span></summary>
+      <p style="padding:12px 16px;font-size:13px;color:#475569;margin:0;background:#f8fafc;">はい。使用年数・バッテリーや動作の不満点・OSサポート状況などを変えて何度でも診断でき、0〜100点の緊急度スコア（70以上で今すぐ検討等）が再計算されます。過去の診断履歴も残るので、買い替え判断の見直しに使えます。</p>
+    </details>
+  </div>
+</section>
 
-<!-- フッター -->
-<footer style="max-width:640px;margin:32px auto;padding:16px;text-align:center;font-size:11px;color:#9ca3af;">
-  <p style="margin:12px 0;"><a href="privacy-policy.html" style="color:#64748b;text-decoration:underline;">プライバシーポリシー</a></p>
-  <p style="margin:8px 0;">© 2025 AppADayCreator</p>
-</footer>
+<div class="max-w-2xl mx-auto px-4"><section  style="background:#f0f9ff;border:1px solid #bae6fd;padding:16px;text-align:center;font-size:12px;color:#0369a1;border-radius:14px;margin-bottom:16px;">
+  <p style="margin:0 0 4px;font-weight:600;">📧 お問い合わせ</p>
+  <p style="margin:0;">ご意見・ご要望・不具合のご報告は <a href="mailto:appadaycreator@gmail.com" style="color:#0369a1;font-weight:bold;">appadaycreator@gmail.com</a> または <a href="contact.html" style="color:#0369a1;">お問い合わせフォーム</a> へ</p>
+</section></div>
+<!-- Amazon Affiliate Links -->
+<div style="margin-top: 2rem; padding: 1rem; background: #f3f4f6; border-radius: 0.75rem; text-align: center;">
+  <p style="margin-bottom: 1rem; font-size: 0.9rem; color: #666;">関連商品をチェック</p>
+  <a class="js-track-affiliate" href="https://amazon.com/?tag=appadaycrea0f-22" target="_blank" rel="noopener noreferrer" style="display: inline-block; padding: 0.75rem 1.5rem; background: #FF9900; color: white; border-radius: 0.5rem; text-decoration: none; font-weight: 600;" data-platform="Amazon" data-item-name="Amazon商品" data-link-type="affiliate_link">Amazonで探す</a>
+</div>
+<div class="max-w-2xl mx-auto px-4 mb-4">
+<!-- Related Services -->
+<section class="bg-white rounded-2xl shadow-md p-5">
+  <h3 style="font-size:14px;font-weight:700;color:#64748b;margin-bottom:12px;letter-spacing:0.03em;">関連サービス</h3>
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px;">
+    <a href="https://appadaycreator.com/smartphone-advisor/" class="related-link">📱 スマートフォン選び診断</a>
+    <a href="https://appadaycreator.com/internet-plan-advisor/" class="related-link">🌐 格安SIM乗り換え診断</a>
+    <a href="https://appadaycreator.com/subscription-calculator/" class="related-link">📋 サブスク費用整理</a>
+    <a href="https://appadaycreator.com/household-budget-analyzer/" class="related-link">💰 家計費用診断</a>
+  </div>
+</section>
+</div>
 
+    
+
+<!-- r31-use-cases -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<h2 style="font-size:1.125rem;font-weight:700;margin:0 0 1rem;color:#1e293b;border-left:4px solid #4f46e5;padding-left:10px">こんな方・シーンで役立ちます</h2>
+<div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:.75rem">
+</div>
+</div>
+<!-- r31-extended-faq -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="background:white;border-radius:16px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.08)">
+<h2 style="font-size:1.05rem;font-weight:700;margin:0 0 1rem;border-left:4px solid #4f46e5;padding-left:10px;color:#1e293b">よくある質問（詳細）</h2>
+<div style="margin-top:12px;display:flex;flex-direction:column;gap:12px">
+<div style="border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px"><p style="font-weight:600;color:#1e293b;margin:0 0 6px">Q. リセールバリューが高い家電・ガジェットを選ぶコツは？</p><p style="font-size:.875rem;color:#475569;line-height:1.8;margin:0">リセールバリュー（中古売却時の価値）が高い製品の特徴として「Apple製品（iPhone・MacBook・iPad）：ブランド力と需要が高く中古でも高値維持」「人気の高いゲーム機・ゲームソフト」「高級オーディオ機器・カメラ機材（プロ向けブランド）」があります。リセールバリューを意識して購入する場合は「人気色（ブラック・シルバー等）を選ぶ」「外箱・付属品を保管する」「早めに売却する（新モデル発表直前が高値）」ことが有効です。最終的な実質コスト（購入価格－売却価格）で比較すると経済的な選択がしやすくなります。</p></div>
+<div style="border:1px solid #e2e8f0;border-radius:10px;padding:12px 14px"><p style="font-weight:600;color:#1e293b;margin:0 0 6px">Q. サブスクリプション型ガジェット・サービスのコストを管理するには？</p><p style="font-size:.875rem;color:#475569;line-height:1.8;margin:0">ガジェット関連のサブスクリプション（クラウドストレージ・音楽・動画・ゲーム等）の管理として「定期的に使っていないサービスを解約する（半年に1回棚卸し）」「家族プラン・学生プランを活用する」「年額プランへの切り替え（月額より20〜30%安い場合が多い）」「バンドル（一括サービス）を活用する（Apple One・Google One等）」があります。複数のサブスクが積み重なると月数万円になるケースもあるため、本ツールでガジェット購入コストと合わせて通信・サービス費用の全体管理をおすすめします。</p></div>
+</div>
+</div>
+</div>
+<!-- r31-tool-notice -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="padding:1.25rem 1.5rem;background:#fef3c7;border:1px solid #fbbf24;border-radius:.75rem">
+<h3 style="font-size:1rem;font-weight:700;margin:0 0 .75rem;color:#92400e">⚠️ ご利用時の注意事項</h3>
+<ul style="margin:0;padding-left:1.25rem;font-size:.88rem;color:#78350f;line-height:2">
+<li style='margin-bottom:.4rem'>本ツールの結果はあくまで参考情報です。実際の状況に応じてご判断ください</li>
+<li style='margin-bottom:.4rem'>重要な決定（医療・法律・財務等）を行う際は必ず専門家にご相談ください</li>
+<li style='margin-bottom:.4rem'>入力データはサーバーに送信されず、すべてブラウザ内で処理されます</li>
+<li style='margin-bottom:.4rem'>本ツールの計算・診断ロジックは定期的に更新しています</li>
+</ul>
+</div>
+</div>
+<!-- r31-tool-references -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="padding:1.25rem 1.5rem;background:#f8fafc;border:1px solid #e2e8f0;border-radius:.75rem">
+<h3 style="font-size:1rem;font-weight:700;margin:0 0 .75rem;color:#1e293b">📚 関連する公的情報・参考リンク</h3>
+<ul style="margin:0;padding-left:1.25rem;font-size:.88rem;color:#374151;line-height:1.9">
+<li style='margin-bottom:.5rem'><a href="https://www.gov-online.go.jp/" target="_blank" rel="noopener noreferrer" style="color:#4f46e5">政府広報オンライン</a> — くらしに役立つ最新の政策・制度・行政情報</li>
+<li style='margin-bottom:.5rem'><a href="https://www.e-gov.go.jp/" target="_blank" rel="noopener noreferrer" style="color:#4f46e5">e-Gov 電子政府の総合窓口</a> — 法令・行政手続・公的制度の詳細情報</li>
+<li style='margin-bottom:.5rem'><a href="https://www.cao.go.jp/consumer/" target="_blank" rel="noopener noreferrer" style="color:#4f46e5">消費者庁</a> — 消費者の権利・安全・表示に関する公的情報</li>
+<li style='margin-bottom:.5rem'><a href="https://www.nhk.or.jp/life/" target="_blank" rel="noopener noreferrer" style="color:#4f46e5">NHK くらし解説</a> — 暮らしのさまざまな疑問をわかりやすく解説</li>
+</ul>
+</div>
+</div>
+<!-- r31-tool-about -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="padding:1.25rem 1.5rem;background:#f0f9ff;border:1px solid #bae6fd;border-radius:.75rem">
+<h3 style="font-size:1rem;font-weight:700;margin:0 0 .75rem;color:#0c4a6e">ℹ️ このツールについて</h3>
+<p style="margin:0;font-size:.88rem;color:#0c4a6e;line-height:1.9">「スマホ・PC買い替えタイミング診断今が替え時？」はAppADayCreatorが提供する無料Webツールです。ライフスタイルに関する情報を素早く手軽に確認できます。会員登録・アプリインストール不要で、ブラウザからすぐにご利用いただけます。すべての処理はブラウザ内で完結するため、入力した情報が外部サーバーに送信されることはなく、プライバシーも保護されます。AppADayCreatorでは、日常生活のあらゆるシーンで役立つWebツールを400本以上無料で提供しています。金融・健康・育児・キャリア・旅行など幅広いカテゴリのツールをご活用ください。</p>
+</div>
+</div>
+<!-- r31-extra-guide -->
+<div style="margin:1.5rem auto;max-width:760px;padding:0 1rem">
+<div style="background:white;border-radius:16px;padding:1.5rem;box-shadow:0 4px 20px rgba(0,0,0,.06)">
+
+<h3 style="font-size:.95rem;font-weight:700;margin:1.25rem 0 .6rem;color:#1e293b">関連ツールのご紹介</h3>
+
+</div>
+</div>
+
+<!-- phase10-rakuten-updated -->
+<p style="text-align:center;font-size:11px;color:#9ca3af;padding:8px 0;">© 2025 AppADayCreator</p>
+</div>
+
+<section style="margin:32px auto;max-width:640px;padding:0 16px;font-size:0.82rem;color:#6b7280;">
+  <h3 style="font-size:0.9rem;font-weight:600;margin-bottom:6px;">免責事項</h3>
+  <p>本サービスの提供する情報は参考目的であり、正確性・完全性を保証するものではありません。
+  重要な判断の際は専門家にご相談ください。サービス利用により生じた損害について当サービスは一切の責任を負いません。</p>
+</section>
+
+
+<div style="margin:24px auto;max-width:720px;padding:16px 20px;background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;">
+  <p style="font-size:12px;font-weight:600;color:#94a3b8;text-align:center;margin:0 0 12px;letter-spacing:0.05em;">スポンサーリンク</p>
+  <div style="display:flex;flex-wrap:wrap;gap:8px;justify-content:center;">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ6+FQ9JMY+1LP8+BY642" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">日々の生活にハッピーをプラス！《ハピタス》</a><img border="0" width="1" height="1" src="https://www14.a8.net/0.gif?a8mat=4B3WJ6+FQ9JMY+1LP8+BY642" alt="">
+    <a href="https://px.a8.net/svt/ejp?a8mat=4B3WJ5+C2OQY2+14CS+68EPE" rel="nofollow noopener noreferrer" target="_blank" style="display:inline-block;padding:5px 12px;background:#fff;border:1px solid #d1d5db;border-radius:20px;font-size:12px;color:#4b5563;text-decoration:none;white-space:nowrap;">【じゃらん】国内25,000軒の宿をネットで予約OK！2％ポイント還元！</a><img border="0" width="1" height="1" src="https://www11.a8.net/0.gif?a8mat=4B3WJ5+C2OQY2+14CS+68EPE" alt="">
+  </div>
+  <p style="font-size:11px;color:#9ca3af;text-align:center;margin-top:8px;">※上記のリンクはA8.netアフィリエイトプログラムを利用しています</p>
+</div>
+
+<div style="text-align:center;padding:10px 16px 14px;background:#eef2ff;border-top:2px solid #c7d2fe;margin-top:8px">
+<a href="/blog/" style="color:#4f46e5;font-size:.85rem;font-weight:700">📖 マネー・育児・キャリアのコラムを読む →</a>
+</div>
+
+<section aria-labelledby="faq-h" class="bg-white rounded-2xl shadow-md p-4 mb-4" style="max-width:740px;margin-left:auto;margin-right:auto">
+  
+<div style="background:#f0f7ff;border:1px solid #bfdbfe;border-radius:12px;padding:1.5rem 1.75rem;margin:2rem 0" id="tool-desc-box">
+  <h2 style="font-size:1.05rem;font-weight:800;color:#1e40af;margin:0 0 1rem">📋 このツールの詳細</h2>
+  <p style="color:#374151;margin:0 0 .75rem;line-height:1.8">「スマホ・PC買い替えタイミング診断【無料】今が替え時？」は、現在の機種・使用年数・不満点から最適な買い替えタイミングを無料診断。損しない買い替え判断。</p>
+</div>
+<div style="background:#eaf4fb;border-left:4px solid #1976d2;padding:20px 24px;margin:24px 0;border-radius:0 8px 8px 0">
+  <h3 style="font-size:1.1rem;font-weight:800;color:#1e3a5f">このツールでできること</h3>
+  <p style="margin:8px 0 0;line-height:1.7;color:#1a1a2e">スマートフォン・パソコン・家電などのガジェットについて、購入に最適なタイミングをアドバイスします。モデルチェンジサイクルや大型セール時期を考慮した購入戦略を提案します。</p>
+</div>
+<div style="background:#f0fdf4;border-left:4px solid #388e3c;padding:20px 24px;margin:24px 0;border-radius:0 8px 8px 0">
+  <h3 style="font-size:1.1rem;font-weight:800;color:#1b5e20">活用シーン・使い方</h3>
+  <p style="margin:8px 0 0;line-height:1.7;color:#1a1a2e">新モデル発売前に旧モデルを安く買うべきか、待って新モデルを買うべきか迷っている方に最適です。ブラックフライデーや年末年始セールなどのベストな購入タイミングも確認できます。</p>
+</div>
+<div style="background:#fff8e1;border-left:4px solid #f57c00;padding:20px 24px;margin:24px 0;border-radius:0 8px 8px 0">
+  <h3 style="font-size:1.1rem;font-weight:800;color:#e65100">注意点・補足</h3>
+  <p style="margin:8px 0 0;line-height:1.7;color:#1a1a2e">メーカーの発売スケジュールや価格は変動します。最新情報は各メーカー公式サイトや価格比較サービスで必ずご確認ください。</p>
+</div>
+<!-- r22-editorial -->
+<div style="background:#eff6ff;border:1px solid #bfdbfe;border-radius:.75rem;padding:1.5rem;margin:1.5rem 0">
+  <h2 style="font-size:1.05rem;font-weight:800;color:#1e3a8a;margin:0 0 1rem;border-left:4px solid #2563eb;padding-left:.75rem">スマートフォン・通信の実態データ（総務省）</h2>
+  <p style="font-size:.88rem;color:#4b5563;margin:0 0 .75rem">総務省「情報通信白書」をもとに整理しました。</p>
+  <table style="width:100%;border-collapse:collapse;font-size:.83rem">
+    <thead>
+      <tr style="background:#bfdbfe">
+        <th style="padding:.5rem .75rem;text-align:left;border:1px solid #bfdbfe;color:#1e3a8a">項目</th>
+        <th style="padding:.5rem .75rem;text-align:left;border:1px solid #bfdbfe;color:#1e3a8a">データ</th>
+        <th style="padding:.5rem .75rem;text-align:left;border:1px solid #bfdbfe;color:#1e3a8a">出典</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr style="background:#eff6ff">
+        <td style="padding:.5rem .75rem;border:1px solid #bfdbfe;font-weight:600;color:#1e3a8a">スマートフォン普及率（2023年）</td>
+        <td style="padding:.5rem .75rem;border:1px solid #bfdbfe"><strong>約92%（全世代）</strong></td>
+        <td style="padding:.5rem .75rem;border:1px solid #bfdbfe;font-size:.78rem;color:#6b7280">総務省「通信利用動向調査」2023年</td>
+      </tr>
+      <tr style="">
+        <td style="padding:.5rem .75rem;border:1px solid #bfdbfe;font-weight:600;color:#1e3a8a">格安SIMへの変更節約効果</td>
+        <td style="padding:.5rem .75rem;border:1px solid #bfdbfe"><strong>月額5,000〜15,000円程度の削減が多い</strong></td>
+        <td style="padding:.5rem .75rem;border:1px solid #bfdbfe;font-size:.78rem;color:#6b7280">総務省「携帯電話の料金」参考</td>
+      </tr>
+      <tr style="background:#eff6ff">
+        <td style="padding:.5rem .75rem;border:1px solid #bfdbfe;font-weight:600;color:#1e3a8a">通信費の月平均（1人世帯）</td>
+        <td style="padding:.5rem .75rem;border:1px solid #bfdbfe"><strong>約7,000〜10,000円（スマホ＋インターネット）</strong></td>
+        <td style="padding:.5rem .75rem;border:1px solid #bfdbfe;font-size:.78rem;color:#6b7280">総務省「家計調査」参考値</td>
+      </tr>
+      <tr style="">
+        <td style="padding:.5rem .75rem;border:1px solid #bfdbfe;font-weight:600;color:#1e3a8a">インターネット平均速度（固定回線）</td>
+        <td style="padding:.5rem .75rem;border:1px solid #bfdbfe"><strong>ダウンロード：約100〜300Mbps（光回線）</strong></td>
+        <td style="padding:.5rem .75rem;border:1px solid #bfdbfe;font-size:.78rem;color:#6b7280">総務省「ブロードバンドサービスの品質計測」</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!-- r20-tool-links -->
+<div id="tool-disclaimer" style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:10px;padding:1.25rem 1.5rem;margin:1.5rem 0;font-size:.875rem">
+  <p style="font-weight:700;color:#374151;margin:0 0 .5rem">⚠️ 計算結果の活用にあたって</p>
+  <ul style="margin:0;padding-left:1.25rem;color:#4b5563;line-height:1.9"><li><a href="https://www.caa.go.jp/" target="_blank" rel="noopener noreferrer" style="color:#4f46e5;font-size:.85rem">消費者庁「くらしの安心ガイド」</a></li></ul>
+</div>
+<h2 id="faq-h" style="font-size:1.05rem;font-weight:700;margin-bottom:12px;border-left:4px solid #4f46e5;padding-left:10px;">よくある質問</h2>
+  <dl style="line-height:1.8;">
+    <dt style="font-weight:600;color:#1e293b;padding:8px 0 4px">Q. 家電・ガジェットの買い時はいつが最もお得ですか？</dt>
+    <dd style="font-size:.875rem;color:#475569;margin:0 0 12px;padding-left:12px;line-height:1.8">家電・ガジェットの購入に適したタイミングとして「決算セール（2〜3月・8〜9月）：家電量販店が在庫を減らしたい時期で値引き交渉しやすい」「新モデル発売直後：旧モデルが大幅値下がり」「ボーナスセール（6月・12月）：ポイント還元率アップも多い」「年末年始・ゴールデンウィークセール」があります。逆に「発売直後の新モデル（プレミアム価格）」「ゴールデンウィーク前・夏前（エアコン等の需要期前）」は高値になりやすいです。本ツールで商品カテゴリ別の最適な購入タイミングを確認してください。</dd>
+    <dt style="font-weight:600;color:#1e293b;padding:8px 0 4px">Q. ガジェットの価格推移を追跡するためのコツは？</dt>
+    <dd style="font-size:.875rem;color:#475569;margin:0 0 12px;padding-left:12px;line-height:1.8">ガジェットの価格推移を確認する方法として「価格.com（国内最大の価格比較サイト・価格グラフが便利）」「Keepa（Amazonの価格履歴ツール・Amazonで購入する際に必須）」「楽天・Yahoo!のタイムセール・クーポン情報のメルマガ登録」があります。ほしいものリスト・価格アラート機能を活用することで、目標価格になったときに通知を受けられます。海外の価格（Amazon US・英国等）を参考にすることで、日本での価格が高いかどうかの判断材料にもなります。</dd>
+    <dt style="font-weight:600;color:#1e293b;padding:8px 0 4px">Q. 型落ちモデルの購入は本当にお得ですか？</dt>
+    <dd style="font-size:.875rem;color:#475569;margin:0 0 12px;padding-left:12px;line-height:1.8">型落ちモデル購入の賢い判断基準として「新旧モデルの機能差を確認する（大幅アップデートがない場合は旧モデルで十分なことが多い）」「値下がり幅（通常は旧モデルが10〜30%以上値下がりする）」「在庫の有無（廃盤になると修理部品が入手困難になる場合がある）」があります。スマートフォン・パソコンは年次更新が多く、2年前のモデルでも日常用途では十分なスペックであることが多いです。一方、性能向上が著しいGPU・AIカメラ機能等は最新モデルの価値が高い場合があります。</dd>
+  </dl>
+</section>
+<div style="background:#eef2ff;border-left:4px solid #4f46e5;border-radius:.5rem;padding:1rem 1.25rem;margin:1.5rem auto;max-width:760px;font-size:.875rem">
+<p style="margin:0 0 .5rem;font-weight:700;color:#3730a3">📖 お役立ちコラム</p>
+<ul style="margin:0;padding-left:1.25rem;color:#4f46e5;line-height:2">
+<li><a href="/blog/stock-investment-beginner/" style="color:#4f46e5">株式投資の始め方【初心者完全ガイド】</a></li>
+<li><a href="/blog/nisa-comparison/" style="color:#4f46e5">新NISA vs iDeCo 徹底比較</a></li>
+<li><a href="/blog/investment-risk-management/" style="color:#4f46e5">投資のリスク管理入門</a></li>
+</ul>
+</div>
+<!-- r17-mobile-ux -->
+<a href="#top" id="back-to-top" aria-label="ページトップへ戻る" style="display:none;position:fixed;bottom:24px;right:20px;background:#4f46e5;color:#fff;border:none;border-radius:50%;width:48px;height:48px;font-size:1.4rem;line-height:48px;text-align:center;text-decoration:none;box-shadow:0 4px 12px rgba(79,70,229,.4);z-index:9000;cursor:pointer" title="ページトップへ">↑</a>
+<script>
+(function(){
+  var btn = document.getElementById('back-to-top');
+  if(!btn) return;
+  window.addEventListener('scroll', function(){
+    btn.style.display = window.scrollY > 400 ? 'block' : 'none';
+  }, {passive:true});
+})();
+</script>
+<div style="text-align:center;margin:20px auto;max-width:728px;padding:0 16px">
+<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-8427583028015858" data-ad-slot="auto" data-ad-format="auto" data-full-width-responsive="true"></ins>
+<script>try{(adsbygoogle = window.adsbygoogle || []).push({});}catch(e){}</script>
+</div>
+
+<section style="margin:1.5rem auto;max-width:760px;padding:0 1rem" aria-label="家電・ガジェットの買い替えベストタイミングと節約術">
+<div style="background:#f8fafc;border:1px solid #e2e8f0;border-radius:12px;padding:1.25rem 1.5rem">
+<h2 style="font-size:1rem;font-weight:700;color:#1e3a5f;margin:0 0 .75rem;padding-bottom:.5rem;border-bottom:2px solid #3b82f6">家電・ガジェットの買い替えベストタイミングと節約術</h2>
+<p style="color:#374151;line-height:1.85;margin:1.75;margin:0 0 .75rem">家電の買い替えタイミングには「製品サイクル」と「特売タイミング」の2軸があります。製品サイクル：スマートフォン（主要メーカーの新モデル発表1〜2ヶ月前が旧型の最安値時期）、テレビ（9〜10月に新型発表→11月のボーナス商戦が最安値）、エアコン（3〜4月の新型発表後・旧型在庫処分の5〜6月が安い）。</p>
+<p style="color:#374151;line-height:1.85;margin:0 0 .75rem">家電の寿命目安（経済産業省・製品安全センター参照）：エアコン：10〜15年（室外機が先に劣化）、冷蔵庫：10〜12年、洗濯機：10〜12年、電子レンジ：10年、テレビ：10〜15年、給湯器：10〜15年。特に給湯器・エアコンは「故障してから買い替え」では夏冬の繁忙期に当たり、工事費用が1.5〜2倍になるリスクがあります。</p>
+<p style="color:#374151;line-height:1.85;margin:0 0 .75rem">価格下落パターン：発売初月を100%とすると、スマートフォンは3ヶ月後に約85%・6ヶ月後に約70%・12ヶ月後に約55%まで下落する傾向（価格.com調査）。高額製品（10万円以上）は発売後6〜12ヶ月での購入で、総所有コスト（TCO）を大幅に削減できます。</p>
+<h3 style="font-size:.9rem;font-weight:700;color:#1f2937;margin:.75rem 0 .5rem">失敗しないガジェット購入の3ステップ</h3>
+<p style="color:#374151;line-height:1.85;margin:0">①「価格.com」等の価格推移グラフで最安値・底値を確認、②「型番 発売日」でメーカーサイトから発売日・次モデル予定を確認、③購入候補を2〜3製品に絞り「ビックカメラ・ヨドバシ・楽天・Amazon」の4サイトで最安値を比較。ポイント還元（楽天SPU・ビックポイント）を含めた「実質価格」で比較することで、表示価格より5〜15%安く購入できることがあります。</p>
+</div>
+</section>
+<!-- r31-cookie-banner -->
+<div id="cookie-banner" style="position:fixed;bottom:0;left:0;right:0;background:#1e293b;color:#f1f5f9;padding:1rem 1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:.75rem;z-index:9999;font-size:.85rem;box-shadow:0 -2px 10px rgba(0,0,0,.3)">
+<div>当サイトはCookieおよびGoogle Analyticsを使用しています。<a href="/privacy-policy.html" style="color:#60a5fa;text-decoration:underline">プライバシーポリシー</a>をご確認ください。</div>
+<button onclick="document.getElementById('cookie-banner').style.display='none';window.grantConsent && window.grantConsent()" style="background:#3b82f6;color:#fff;border:none;padding:.5rem 1.25rem;border-radius:.375rem;font-size:.85rem;font-weight:600;cursor:pointer;white-space:nowrap">同意して閉じる</button>
+</div>
+<script>if(localStorage.getItem('cookie-consent'))document.getElementById('cookie-banner').style.display='none'</script>
+<!-- r46-org-footer -->
+<div style="text-align:center;font-size:11px;color:#9ca3af;padding:6px 0 4px;background:#f8fafc;border-top:1px solid #e5e7eb;">
+  運営: <a href="https://appadaycreator.com/" style="color:#9ca3af;text-decoration:none;">AppADayCreator</a> | <a href="https://tech-and-brace.co.jp/" rel="noopener" style="color:#9ca3af;text-decoration:none;">株式会社Tech&amp;Brace</a>
+</div>
+<script src="/assets/consent-mode.js"></script>
 </body>
 </html>
