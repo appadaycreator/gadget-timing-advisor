@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>スマホ・PC買い替えタイミング診断【無料】複数デバイス対応 | AppADayCreator</title>
+<meta name="description" content="スマホ・PC買い替えのタイミングを無料診断。バッテリー・動作状態から緊急度を判定。複数デバイス比較・買い替え資金シミュレーション・格安SIM節約効果も計算。">
+<link rel="canonical" href="https://appadaycreator.com/gadget-timing-advisor/lp/">
+<meta property="og:title" content="スマホ・PC買い替えタイミング診断【無料】複数デバイス対応">
+<meta property="og:description" content="スマホ・PC買い替えのタイミングを無料診断。バッテリー・動作状態から緊急度を判定。複数デバイス比較・買い替え資金シミュレーション・格安SIM節約効果も計算。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://appadaycreator.com/gadget-timing-advisor/lp/">
+<meta property="og:image" content="https://appadaycreator.com/ogp.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<!-- GTM -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-TXQGZRF9');</script>
+<!-- GA4 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDPNYD2875"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-ZDPNYD2875');</script>
+<!-- AdSense -->
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8427583028015858" crossorigin="anonymous"></script>
+
+<style>
+:root{
+  --primary:#3B82F6;
+  --primary-dark:#2563EB;
+  --accent:#10B981;
+  --accent-dark:#059669;
+  --text:#1F2937;
+  --text-light:#6B7280;
+  --bg:#F9FAFB;
+  --border:#E5E7EB;
+  --shadow:0 4px 24px rgba(0,0,0,.08);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:-apple-system,BlinkMacSystemFont,'Hiragino Kaku Gothic ProN','メイリオ',sans-serif;color:var(--text);background:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;height:auto;display:block}
+
+/* NAV */
+.nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.97);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);padding:0 20px;box-shadow:0 1px 8px rgba(0,0,0,.06)}
+.nav-inner{max-width:1100px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:58px;gap:12px}
+.nav-brand{font-size:13px;font-weight:800;color:var(--primary);display:flex;align-items:center;gap:6px;white-space:nowrap;flex-shrink:0}
+.nav-links{display:flex;align-items:center;gap:18px;flex:1;justify-content:center}
+.nav-links a{font-size:12px;color:var(--text-light);font-weight:500;transition:color .15s;white-space:nowrap}
+.nav-links a:hover{color:var(--primary)}
+.nav-cta{background:var(--primary);color:#fff;padding:8px 16px;border-radius:8px;font-size:13px;font-weight:700;white-space:nowrap;transition:all .2s;flex-shrink:0}
+.nav-cta:hover{background:var(--primary-dark);transform:translateY(-1px)}
+@media(max-width:820px){.nav-links{display:none}}
+@media(max-width:480px){.nav-cta{padding:7px 12px;font-size:12px}.nav-brand{font-size:12px}}
+
+/* HERO */
+.hero{position:relative;overflow:hidden;min-height:540px;display:flex;align-items:center}
+.hero-bg-img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;z-index:0}
+.hero-overlay{position:absolute;inset:0;background:linear-gradient(110deg,rgba(29,78,216,.94) 0%,rgba(37,99,235,.88) 55%,rgba(59,130,246,.55) 100%);z-index:1}
+.hero-content{position:relative;z-index:2;max-width:1100px;margin:0 auto;padding:60px 20px;display:grid;grid-template-columns:1fr 360px;gap:44px;align-items:center;width:100%}
+.hero-badge{display:inline-block;background:var(--accent);color:#fff;padding:4px 14px;border-radius:20px;font-size:11px;font-weight:700;margin-bottom:14px;letter-spacing:.04em}
+.hero-h1{font-size:clamp(24px,3.8vw,40px);font-weight:900;color:#fff;line-height:1.25;margin-bottom:16px;text-shadow:0 2px 8px rgba(0,0,0,.2)}
+.hero-h1 .hl{color:#93C5FD}
+.hero-sub{font-size:14px;color:rgba(255,255,255,.88);line-height:1.75;margin-bottom:22px}
+.hero-stats{display:flex;align-items:center;gap:10px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);border-radius:12px;padding:14px 16px;margin-bottom:26px;backdrop-filter:blur(4px);width:fit-content}
+.stat{text-align:center;padding:0 8px}
+.stat-num{display:block;font-size:26px;font-weight:900;color:#fff;line-height:1}
+.stat-label{font-size:10px;color:rgba(255,255,255,.8);line-height:1.5;display:block;margin-top:4px}
+.stat-div{width:1px;height:44px;background:rgba(255,255,255,.3);flex-shrink:0}
+.hero-cta{display:inline-block;background:var(--accent);color:#fff;padding:15px 34px;border-radius:12px;font-size:16px;font-weight:800;box-shadow:0 8px 24px rgba(16,185,129,.4);transition:all .2s;margin-bottom:10px}
+.hero-cta:hover{background:var(--accent-dark);transform:translateY(-2px);box-shadow:0 12px 28px rgba(16,185,129,.5)}
+.hero-cta-note{font-size:11px;color:rgba(255,255,255,.65);margin-top:6px}
+
+/* Hero card */
+.hero-card{background:#fff;border-radius:16px;box-shadow:0 20px 60px rgba(0,0,0,.25);overflow:hidden}
+.hero-card-hd{background:var(--primary);color:#fff;padding:11px 16px;font-size:12px;font-weight:700;display:flex;align-items:center;justify-content:space-between}
+.hero-card-body{padding:14px}
+.device-row{display:flex;align-items:center;gap:10px;padding:10px;border:1px solid #e5e7eb;border-radius:10px;margin-bottom:8px}
+.device-thumb{width:42px;height:42px;object-fit:cover;border-radius:8px;flex-shrink:0}
+.device-info{flex:1;min-width:0}
+.device-name{font-size:13px;font-weight:700;color:#1f2937;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.device-sub{font-size:10px;color:#9ca3af}
+.score-num-r{font-size:20px;font-weight:900;min-width:48px;text-align:right;line-height:1}
+.score-num-r small{font-size:10px;font-weight:400}
+.budget-box{background:linear-gradient(135deg,#f0fdf4,#dcfce7);border:1px solid #86efac;border-radius:10px;padding:12px 14px;margin-top:2px}
+.budget-lbl{font-size:10px;color:#166534;font-weight:700;margin-bottom:6px}
+.budget-amt{font-size:22px;font-weight:900;color:#166534}
+.budget-note{font-size:10px;color:#16a34a;margin-top:2px}
+.budget-total{font-size:10px;color:#6b7280;display:block;margin-top:3px}
+
+@media(max-width:900px){.hero-content{grid-template-columns:1fr}.hero-card{display:none}}
+@media(max-width:480px){.hero{min-height:auto}.hero-content{padding:36px 16px}.hero-h1{font-size:24px}}
+
+/* SECTION */
+.sec{padding:64px 20px}
+.sec-bg{background:var(--bg)}
+.sec-hd{text-align:center;margin-bottom:40px}
+.sec-lbl{display:inline-block;color:var(--primary);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;margin-bottom:8px}
+.sec-title{font-size:clamp(18px,2.8vw,26px);font-weight:800;color:var(--text);line-height:1.3}
+.sec-sub{font-size:13px;color:var(--text-light);margin-top:8px;line-height:1.7}
+.inner{max-width:1100px;margin:0 auto}
+
+/* FEATURES */
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feat-card{background:#fff;border:1px solid var(--border);border-radius:14px;padding:22px 18px;transition:all .2s;display:flex;flex-direction:column;gap:10px}
+.feat-card:hover{border-color:var(--primary);box-shadow:0 8px 24px rgba(59,130,246,.1);transform:translateY(-2px)}
+.feat-icon{width:48px;height:48px;object-fit:contain}
+.feat-title{font-size:14px;font-weight:700;color:var(--text)}
+.feat-desc{font-size:12px;color:var(--text-light);line-height:1.7}
+@media(max-width:760px){.features-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.features-grid{grid-template-columns:1fr}}
+
+/* STEPS */
+.steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.step-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.step-photo{width:100%;height:160px;object-fit:cover}
+.step-body{padding:20px}
+.step-num{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--primary);color:#fff;font-size:13px;font-weight:800;margin-bottom:10px}
+.step-title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:6px}
+.step-desc{font-size:12px;color:var(--text-light);line-height:1.7}
+@media(max-width:760px){.steps-grid{grid-template-columns:1fr;max-width:480px;margin:0 auto}}
+
+/* SAMPLE RESULT */
+.sample-inner{display:grid;grid-template-columns:260px 1fr;gap:44px;align-items:start}
+.gauge-wrap{position:relative;width:160px;height:160px;margin:0 auto}
+.gauge-svg{transform:rotate(-90deg)}
+.gauge-center{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.gauge-score{font-size:38px;font-weight:900;color:#ef4444;line-height:1}
+.gauge-max{font-size:11px;color:#9ca3af}
+.judgment-badge{display:inline-block;background:#fef2f2;border:1.5px solid #fecaca;border-radius:8px;padding:8px 18px;font-size:13px;font-weight:700;color:#ef4444;text-align:center;margin-top:12px}
+.score-legend{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.legend-item{padding:5px 10px;border-radius:16px;font-size:10px;font-weight:600;border:1px solid}
+.legend-item.r{background:#fef2f2;border-color:#fecaca;color:#ef4444}
+.legend-item.y{background:#fffbeb;border-color:#fde68a;color:#d97706}
+.legend-item.g{background:#f0fdf4;border-color:#bbf7d0;color:#16a34a}
+.legend-item.b{background:#eff6ff;border-color:#bfdbfe;color:#2563eb}
+.sample-devices{display:flex;flex-direction:column;gap:10px}
+.s-dev-row{display:flex;align-items:center;gap:12px;padding:14px;background:#f9fafb;border-radius:10px;border:1px solid var(--border)}
+.s-dev-img{width:48px;height:48px;object-fit:cover;border-radius:8px;flex-shrink:0}
+.s-dev-info{flex:1;min-width:0}
+.s-dev-name{font-size:13px;font-weight:700;color:#1f2937}
+.s-dev-sub{font-size:10px;color:#9ca3af;margin-top:1px}
+.s-dev-bars{flex:2;display:flex;flex-direction:column;gap:5px}
+.bar-row{display:flex;align-items:center;gap:6px}
+.bar-lbl{font-size:9px;color:#6b7280;width:52px;flex-shrink:0}
+.bar-track{flex:1;height:6px;background:#e5e7eb;border-radius:3px}
+.bar-fill{height:100%;border-radius:3px}
+.bar-pct{font-size:9px;width:28px;text-align:right}
+.s-dev-score{font-size:20px;font-weight:800;min-width:46px;text-align:right}
+.chart-bar-row{display:flex;align-items:center;gap:10px}
+.chart-bar-lbl{font-size:11px;width:110px;text-align:right;color:#374151;flex-shrink:0}
+.chart-bar-track{flex:1;height:18px;background:#e5e7eb;border-radius:9px;overflow:hidden}
+.chart-bar-fill{height:100%;border-radius:9px;transition:width .6s}
+.chart-bar-val{font-size:12px;font-weight:700;min-width:36px}
+@media(max-width:760px){.sample-inner{grid-template-columns:1fr}.gauge-wrap,.judgment-badge{margin:0 auto}}
+
+/* SIMULATION */
+.sim-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-bottom:20px}
+.sim-card{background:#fff;border-radius:14px;padding:20px;box-shadow:var(--shadow);text-align:center}
+.sim-lbl{font-size:11px;color:var(--text-light);margin-bottom:8px}
+.sim-amt{font-size:26px;font-weight:900;color:var(--text)}
+.sim-sub{font-size:10px;color:var(--text-light);margin-top:4px}
+.sim-card.blue{background:linear-gradient(135deg,var(--primary),var(--primary-dark));color:#fff}
+.sim-card.blue .sim-lbl,.sim-card.blue .sim-sub{color:rgba(255,255,255,.8)}
+.sim-card.blue .sim-amt{color:#fff}
+.sim-table{background:#fff;border-radius:14px;padding:20px;box-shadow:var(--shadow);display:grid;grid-template-columns:repeat(4,1fr);gap:12px;text-align:center}
+.sim-t-item{display:flex;flex-direction:column;gap:4px}
+.sim-t-lbl{font-size:10px;color:var(--text-light)}
+.sim-t-amt{font-size:18px;font-weight:800;color:var(--text)}
+.sim-t-item.plus .sim-t-amt{color:#ef4444}
+.sim-t-item.minus .sim-t-amt{color:#10b981}
+.sim-t-item.total .sim-t-amt{font-size:22px;color:var(--primary)}
+@media(max-width:760px){.sim-grid{grid-template-columns:1fr}.sim-table{grid-template-columns:repeat(2,1fr)}}
+
+/* OUTPUT */
+.output-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.out-card{display:flex;gap:12px;align-items:flex-start;padding:18px;background:var(--bg);border-radius:12px;border:1px solid var(--border)}
+.out-icon{width:40px;height:40px;flex-shrink:0;object-fit:contain}
+.out-title{font-size:13px;font-weight:700;margin-bottom:4px}
+.out-desc{font-size:11px;color:var(--text-light);line-height:1.6}
+@media(max-width:760px){.output-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:480px){.output-grid{grid-template-columns:1fr}}
+
+/* TRUST */
+.trust-wrap{background:linear-gradient(135deg,#f0f9ff,#eff6ff);padding:48px 20px;border-top:1px solid #bfdbfe;border-bottom:1px solid #bfdbfe}
+.trust-grid{max-width:900px;margin:0 auto;display:grid;grid-template-columns:repeat(5,1fr);gap:16px;text-align:center}
+.trust-icon{width:44px;height:44px;margin:0 auto 10px;object-fit:contain}
+.trust-title{font-size:12px;font-weight:700;color:var(--text);margin-bottom:4px}
+.trust-desc{font-size:10px;color:var(--text-light);line-height:1.6}
+@media(max-width:700px){.trust-grid{grid-template-columns:repeat(3,1fr)}}
+@media(max-width:400px){.trust-grid{grid-template-columns:repeat(2,1fr)}}
+
+/* PHOTO STRIP */
+.photo-strip{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.photo-strip img{width:100%;height:160px;object-fit:cover}
+@media(max-width:600px){.photo-strip{grid-template-columns:repeat(2,1fr)}}
+
+/* FAQ */
+.faq-inner{max-width:780px;margin:0 auto}
+details.faq{border:1px solid var(--border);border-radius:12px;margin-bottom:10px;overflow:hidden}
+details.faq summary{display:flex;align-items:center;justify-content:space-between;padding:15px 18px;cursor:pointer;font-size:13px;font-weight:600;color:var(--text);background:#fff;list-style:none;transition:background .15s}
+details.faq summary:hover{background:#f9fafb}
+details.faq summary::-webkit-details-marker{display:none}
+details.faq p{padding:0 18px 15px;font-size:13px;color:var(--text-light);line-height:1.8;background:#f9fafb}
+
+/* FOOTER CTA */
+.footer-cta{position:relative;overflow:hidden;min-height:320px;display:flex;align-items:center}
+.fcta-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.25}
+.fcta-overlay{position:absolute;inset:0;background:linear-gradient(135deg,rgba(29,78,216,.96),rgba(37,99,235,.9));z-index:1}
+.fcta-content{position:relative;z-index:2;max-width:680px;margin:0 auto;padding:56px 20px;text-align:center}
+.fcta-badge{display:inline-block;background:var(--accent);color:#fff;padding:5px 16px;border-radius:20px;font-size:11px;font-weight:700;margin-bottom:14px}
+.fcta-title{font-size:clamp(18px,3vw,28px);font-weight:900;color:#fff;line-height:1.3;margin-bottom:12px}
+.fcta-sub{font-size:13px;color:rgba(255,255,255,.82);margin-bottom:26px;line-height:1.7}
+.fcta-btn{display:inline-block;background:var(--accent);color:#fff;padding:16px 44px;border-radius:12px;font-size:17px;font-weight:800;box-shadow:0 10px 28px rgba(16,185,129,.5);transition:all .2s}
+.fcta-btn:hover{background:var(--accent-dark);transform:translateY(-2px)}
+.fcta-note{font-size:11px;color:rgba(255,255,255,.6);margin-top:12px}
+.fcta-photos{display:flex;gap:10px;justify-content:center;margin-top:18px}
+.fcta-photos img{width:68px;height:68px;border-radius:50%;object-fit:cover;border:3px solid rgba(255,255,255,.3)}
+
+/* FOOTER */
+footer{background:#1f2937;color:#9ca3af;padding:20px;text-align:center;font-size:11px}
+footer a{color:#6b7280}
+.btn-cta{display:inline-block;background:var(--primary);color:#fff;padding:12px 28px;border-radius:10px;font-size:14px;font-weight:700;transition:all .2s;box-shadow:0 4px 14px rgba(59,130,246,.3)}
+.btn-cta:hover{background:var(--primary-dark);transform:translateY(-2px)}
+</style>
+</head>
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXQGZRF9" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<!-- NAV -->
+<nav class="nav" id="top">
+  <div class="nav-inner">
+    <a href="#top" class="nav-brand">📱 スマホ・PC買い替えタイミング診断</a>
+    <div class="nav-links">
+      <a href="#features">特徴</a>
+      <a href="#steps">診断の流れ</a>
+      <a href="#sample">サンプル結果</a>
+      <a href="#simulation">節約シミュレーション</a>
+      <a href="#faq">よくある質問</a>
+    </div>
+    <a href="../" class="nav-cta">今すぐ診断する</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <img src="../assets/photos/photo_01.jpg" alt="" class="hero-bg-img" aria-hidden="true" loading="eager">
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-content">
+    <div class="hero-left">
+      <span class="hero-badge">✓ 複数デバイス対応</span>
+      <h1 class="hero-h1">スマホ・PC<br>買い替えタイミング診断<br><span class="hl">【無料】</span></h1>
+      <p class="hero-sub">バッテリー・ストレージ・動作速度から緊急度を判定。<br>複数デバイスを同時比較して、最もコスパの高い買い替え戦略を提案します。</p>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num">92<small style="font-size:14px">%</small></span>
+          <span class="stat-label">のスマホユーザーが<br>機種を3〜5年で交換</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat">
+          <span class="stat-num">70<small style="font-size:14px">%</small></span>
+          <span class="stat-label">が買い替え時期を<br>誤認識している</span>
+        </div>
+      </div>
+      <a href="../" class="hero-cta">今すぐ診断する →</a>
+      <p class="hero-cta-note">無料・会員登録不要・所要時間約60秒</p>
+    </div>
+    <div class="hero-right">
+      <div class="hero-card">
+        <div class="hero-card-hd">
+          <span>📊 デバイス比較</span>
+          <span style="font-size:10px;opacity:.8">診断サンプル</span>
+        </div>
+        <div class="hero-card-body">
+          <div class="device-row">
+            <img src="../assets/photos/photo_06.jpg" alt="iPhone" class="device-thumb">
+            <div class="device-info">
+              <div class="device-name">iPhone 13</div>
+              <div class="device-sub">2021年モデル</div>
+            </div>
+            <div style="text-align:right">
+              <div class="score-num-r" style="color:#ef4444">78 <small>点</small></div>
+              <div style="font-size:9px;color:#ef4444;font-weight:600">今すぐ</div>
+            </div>
+          </div>
+          <div class="device-row">
+            <img src="../assets/photos/photo_07.jpg" alt="MacBook" class="device-thumb">
+            <div class="device-info">
+              <div class="device-name">MacBook Air M1</div>
+              <div class="device-sub">2020年モデル</div>
+            </div>
+            <div style="text-align:right">
+              <div class="score-num-r" style="color:#d97706">54 <small>点</small></div>
+              <div style="font-size:9px;color:#d97706;font-weight:600">半年以内</div>
+            </div>
+          </div>
+          <div class="budget-box">
+            <div class="budget-lbl">💰 買い替え予算計画（最安）</div>
+            <div class="budget-amt">¥32,480</div>
+            <div class="budget-note">節約可能額（2デバイス合計）</div>
+            <span class="budget-total">トータル年間節約 ¥69,600</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="sec" id="features">
+  <div class="inner">
+    <div class="sec-hd">
+      <div class="sec-lbl">FEATURES</div>
+      <h2 class="sec-title">スマホ・PC買い替えタイミング診断の特徴</h2>
+      <p class="sec-sub">6つの機能で、あなたの最適な買い替えタイミングを正確に判定します</p>
+    </div>
+    <div class="features-grid">
+      <div class="feat-card">
+        <img src="../assets/icons/split/01-03.png" alt="" class="feat-icon" aria-hidden="true">
+        <div class="feat-title">スマホだけでなくPC診断</div>
+        <div class="feat-desc">スマートフォン・ノートPC・タブレット・デスクトップまで、あらゆるガジェットの買い替えタイミングを診断できます。</div>
+      </div>
+      <div class="feat-card">
+        <img src="../assets/icons/split/01-06.png" alt="" class="feat-icon" aria-hidden="true">
+        <div class="feat-title">複数デバイス同時診断・比較</div>
+        <div class="feat-desc">スマホとPCを同時に診断して比較。どちらを先に買い替えるべきか優先順位を明確にします。</div>
+      </div>
+      <div class="feat-card">
+        <img src="../assets/icons/split/02-04.png" alt="" class="feat-icon" aria-hidden="true">
+        <div class="feat-title">買い替え資金シミュレーション</div>
+        <div class="feat-desc">買い替えに必要な資金を試算。分割払い・一括払い・下取り込みの月々の負担額を比較できます。</div>
+      </div>
+      <div class="feat-card">
+        <img src="../assets/icons/split/02-06.png" alt="" class="feat-icon" aria-hidden="true">
+        <div class="feat-title">下取り価格の相場確認</div>
+        <div class="feat-desc">現在の端末の下取り相場を機種・年式から推計。最もお得な売却タイミングを提案します。</div>
+      </div>
+      <div class="feat-card">
+        <img src="../assets/icons/split/02-05.png" alt="" class="feat-icon" aria-hidden="true">
+        <div class="feat-title">格安SIMに乗り換えによる節約可能性</div>
+        <div class="feat-desc">大手キャリアから格安SIMへ乗り換えた場合の月次節約額を計算。年間で数万円の節約効果を可視化します。</div>
+      </div>
+      <div class="feat-card">
+        <img src="../assets/icons/split/01-08.png" alt="" class="feat-icon" aria-hidden="true">
+        <div class="feat-title">メーカー別買い替えサイクル分析</div>
+        <div class="feat-desc">Apple・Samsung・Xperia等のメーカー別サポート期間と発売サイクルを分析。長期的に最適な機種選びをサポートします。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- STEPS -->
+<section class="sec sec-bg" id="steps">
+  <div class="inner">
+    <div class="sec-hd">
+      <div class="sec-lbl">HOW IT WORKS</div>
+      <h2 class="sec-title">診断はたったの3ステップ</h2>
+      <p class="sec-sub">質問に答えるだけで、あなたのデバイスの買い替え緊急度を判定します</p>
+    </div>
+    <div class="steps-grid">
+      <div class="step-card">
+        <img src="../assets/photos/photo_02.jpg" alt="デバイス情報を入力" class="step-photo" loading="lazy">
+        <div class="step-body">
+          <div class="step-num">1</div>
+          <div class="step-title">デバイス情報を入力する</div>
+          <div class="step-desc">デバイスの種類・使用年数・バッテリーの状態・動作の症状など6つの質問に答えます。所要時間は約60秒です。</div>
+          <div style="display:flex;gap:6px;margin-top:12px">
+            <img src="../assets/photos/photo_08.jpg" alt="" style="width:52px;height:52px;object-fit:cover;border-radius:8px" loading="lazy">
+            <img src="../assets/photos/photo_09.jpg" alt="" style="width:52px;height:52px;object-fit:cover;border-radius:8px" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="step-card">
+        <img src="../assets/photos/photo_03.jpg" alt="緊急度スコアを確認" class="step-photo" loading="lazy">
+        <div class="step-body">
+          <div class="step-num">2</div>
+          <div class="step-title">緊急度スコアを確認する</div>
+          <div class="step-desc">バッテリー・動作速度・OSサポート状況などを総合評価。0〜100点で買い替えの緊急度をスコア化します。</div>
+          <div style="display:flex;gap:6px;margin-top:12px">
+            <img src="../assets/photos/photo_10.jpg" alt="" style="width:52px;height:52px;object-fit:cover;border-radius:8px" loading="lazy">
+            <img src="../assets/photos/photo_11.jpg" alt="" style="width:52px;height:52px;object-fit:cover;border-radius:8px" loading="lazy">
+          </div>
+        </div>
+      </div>
+      <div class="step-card">
+        <img src="../assets/photos/photo_04.jpg" alt="最適な買い替え方法を提案" class="step-photo" loading="lazy">
+        <div class="step-body">
+          <div class="step-num">3</div>
+          <div class="step-title">最適な買い替え方法を提案</div>
+          <div class="step-desc">スコアと予算から最適な買い替えプランを提案。格安SIM乗り換えや下取りを含むトータルコスト削減策を表示します。</div>
+          <div style="display:flex;gap:6px;margin-top:12px">
+            <img src="../assets/photos/photo_12.jpg" alt="" style="width:52px;height:52px;object-fit:cover;border-radius:8px" loading="lazy">
+            <img src="../assets/photos/photo_13.jpg" alt="" style="width:52px;height:52px;object-fit:cover;border-radius:8px" loading="lazy">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:36px">
+      <a href="../" class="btn-cta">今すぐ無料で診断する →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SAMPLE RESULT -->
+<section class="sec" id="sample">
+  <div class="inner">
+    <div class="sec-hd">
+      <div class="sec-lbl">SAMPLE RESULT</div>
+      <h2 class="sec-title">診断結果サンプル</h2>
+      <p class="sec-sub">このような診断結果が表示されます</p>
+    </div>
+    <div class="sample-inner">
+      <div style="text-align:center">
+        <div class="gauge-wrap">
+          <svg class="gauge-svg" width="160" height="160" viewBox="0 0 160 160">
+            <circle cx="80" cy="80" r="66" fill="none" stroke="#e5e7eb" stroke-width="14"/>
+            <circle cx="80" cy="80" r="66" fill="none" stroke="#ef4444" stroke-width="14" stroke-dasharray="329 415" stroke-dashoffset="0" stroke-linecap="round"/>
+          </svg>
+          <div class="gauge-center">
+            <div class="gauge-score">78</div>
+            <div class="gauge-max">/100点</div>
+          </div>
+        </div>
+        <div class="judgment-badge">今すぐ買い替えを検討</div>
+        <div style="margin-top:14px">
+          <img src="../assets/photos/photo_14.jpg" alt="" style="width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid #bfdbfe;margin:0 auto" loading="lazy">
+          <div style="font-size:10px;color:#9ca3af;margin-top:6px">総合診断スコア</div>
+        </div>
+        <div class="score-legend">
+          <div class="legend-item r">🔴 70〜：今すぐ</div>
+          <div class="legend-item y">🟡 45〜69：半年以内</div>
+          <div class="legend-item g">🟢 20〜44：1年以内</div>
+          <div class="legend-item b">🔵 〜19：まだ大丈夫</div>
+        </div>
+      </div>
+      <div>
+        <div style="font-size:15px;font-weight:700;color:var(--text);margin-bottom:14px">デバイス診断結果</div>
+        <div class="sample-devices">
+          <div class="s-dev-row">
+            <img src="../assets/photos/photo_15.jpg" alt="iPhone 13" class="s-dev-img" loading="lazy">
+            <div class="s-dev-info">
+              <div class="s-dev-name">iPhone 13 (256GB)</div>
+              <div class="s-dev-sub">2021年購入・3年使用</div>
+            </div>
+            <div class="s-dev-bars">
+              <div class="bar-row">
+                <span class="bar-lbl">バッテリー</span>
+                <div class="bar-track"><div class="bar-fill" style="width:70%;background:#3b82f6"></div></div>
+                <span class="bar-pct" style="color:#3b82f6">70%</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-lbl">OS</span>
+                <div class="bar-track"><div class="bar-fill" style="width:85%;background:#10b981"></div></div>
+                <span class="bar-pct" style="color:#10b981">85%</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-lbl">動作速度</span>
+                <div class="bar-track"><div class="bar-fill" style="width:75%;background:#f59e0b"></div></div>
+                <span class="bar-pct" style="color:#f59e0b">75%</span>
+              </div>
+            </div>
+            <div class="s-dev-score" style="color:#ef4444">78</div>
+          </div>
+          <div class="s-dev-row">
+            <img src="../assets/photos/photo_16.jpg" alt="MacBook Air M1" class="s-dev-img" loading="lazy">
+            <div class="s-dev-info">
+              <div class="s-dev-name">MacBook Air M1 (2020)</div>
+              <div class="s-dev-sub">2020年購入・4年使用</div>
+            </div>
+            <div class="s-dev-bars">
+              <div class="bar-row">
+                <span class="bar-lbl">バッテリー</span>
+                <div class="bar-track"><div class="bar-fill" style="width:85%;background:#3b82f6"></div></div>
+                <span class="bar-pct" style="color:#3b82f6">85%</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-lbl">OS</span>
+                <div class="bar-track"><div class="bar-fill" style="width:90%;background:#10b981"></div></div>
+                <span class="bar-pct" style="color:#10b981">90%</span>
+              </div>
+              <div class="bar-row">
+                <span class="bar-lbl">動作速度</span>
+                <div class="bar-track"><div class="bar-fill" style="width:95%;background:#f59e0b"></div></div>
+                <span class="bar-pct" style="color:#f59e0b">95%</span>
+              </div>
+            </div>
+            <div class="s-dev-score" style="color:#d97706">54</div>
+          </div>
+        </div>
+        <div style="margin-top:16px;background:#f9fafb;border-radius:12px;padding:16px">
+          <div style="font-size:13px;font-weight:700;color:var(--text);margin-bottom:12px">スコア比較グラフ</div>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div class="chart-bar-row">
+              <span class="chart-bar-lbl">MacBook Air M1</span>
+              <div class="chart-bar-track"><div class="chart-bar-fill" style="width:78%;background:#3b82f6"></div></div>
+              <span class="chart-bar-val" style="color:#3b82f6">78点</span>
+            </div>
+            <div class="chart-bar-row">
+              <span class="chart-bar-lbl">iPhone 13</span>
+              <div class="chart-bar-track"><div class="chart-bar-fill" style="width:54%;background:#f59e0b"></div></div>
+              <span class="chart-bar-val" style="color:#f59e0b">54点</span>
+            </div>
+          </div>
+          <div style="margin-top:12px">
+            <a href="../" style="display:inline-block;background:var(--primary);color:#fff;border:none;padding:8px 18px;border-radius:8px;font-size:12px;font-weight:700;cursor:pointer">+ デバイスを追加する</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PHOTO STRIP -->
+<div class="photo-strip">
+  <img src="../assets/photos/photo_17.jpg" alt="" loading="lazy">
+  <img src="../assets/photos/photo_18.jpg" alt="" loading="lazy">
+  <img src="../assets/photos/photo_19.jpg" alt="" loading="lazy">
+  <img src="../assets/photos/photo_05.jpg" alt="" loading="lazy">
+</div>
+
+<!-- SIMULATION -->
+<section class="sec sec-bg" id="simulation">
+  <div class="inner">
+    <div class="sec-hd">
+      <div class="sec-lbl">SIMULATION</div>
+      <h2 class="sec-title">節約シミュレーション</h2>
+      <p class="sec-sub">買い替え費用と通信費の節約効果を合わせてシミュレーションします</p>
+    </div>
+    <div class="sim-grid">
+      <div class="sim-card">
+        <div class="sim-lbl">現在の毎月の支払い（格安SIM比較）</div>
+        <div class="sim-amt">¥7,980</div>
+        <div class="sim-sub">スタンダードプラン（大手3キャリア）</div>
+      </div>
+      <div class="sim-card">
+        <div class="sim-lbl">格安SIM乗り換えで節約できる額</div>
+        <div class="sim-amt" style="color:#10b981">¥2,180</div>
+        <div class="sim-sub">月額節約（IIJmio比較・例）</div>
+      </div>
+      <div class="sim-card blue">
+        <div class="sim-lbl">年間トータル節約額</div>
+        <div class="sim-amt">¥69,600</div>
+        <div class="sim-sub">通信費＋端末代節約合計</div>
+      </div>
+    </div>
+    <div class="sim-table">
+      <div class="sim-t-item">
+        <span class="sim-t-lbl">現在の端末代（残債）</span>
+        <span class="sim-t-amt">¥95,760</span>
+      </div>
+      <div class="sim-t-item plus">
+        <span class="sim-t-lbl">新端末価格（下取前）</span>
+        <span class="sim-t-amt">+¥28,000</span>
+      </div>
+      <div class="sim-t-item minus">
+        <span class="sim-t-lbl">下取り価格</span>
+        <span class="sim-t-amt">−¥78,400</span>
+      </div>
+      <div class="sim-t-item total">
+        <span class="sim-t-lbl">トータル節約額（年間）</span>
+        <span class="sim-t-amt">¥69,600</span>
+      </div>
+    </div>
+    <div style="text-align:center;margin-top:18px;font-size:13px;color:#6b7280">
+      分割払いの場合 月々 <strong style="color:var(--primary)">¥2,950〜</strong>
+      <a href="../" style="display:inline-block;margin-left:14px;background:var(--primary);color:#fff;padding:9px 20px;border-radius:8px;font-size:13px;font-weight:700">詳しく計算する →</a>
+    </div>
+  </div>
+</section>
+
+<!-- OUTPUT/SHARE -->
+<section class="sec" id="output">
+  <div class="inner">
+    <div class="sec-hd">
+      <div class="sec-lbl">OUTPUT & SHARE</div>
+      <h2 class="sec-title">結果の出力・共有機能</h2>
+      <p class="sec-sub">診断結果をさまざまな形で保存・共有・活用できます</p>
+    </div>
+    <div class="output-grid">
+      <div class="out-card">
+        <img src="../assets/icons/split/03-06.png" alt="" class="out-icon" aria-hidden="true">
+        <div>
+          <div class="out-title">SNS共有</div>
+          <div class="out-desc">Twitter/XやLINEで診断結果をかんたんシェア。友だちへのアドバイスにも使えます。</div>
+        </div>
+      </div>
+      <div class="out-card">
+        <img src="../assets/icons/split/03-05.png" alt="" class="out-icon" aria-hidden="true">
+        <div>
+          <div class="out-title">PDF出力</div>
+          <div class="out-desc">診断結果・節約シミュレーション・おすすめプランをPDFで保存。家族との相談資料に最適です。</div>
+        </div>
+      </div>
+      <div class="out-card">
+        <img src="../assets/icons/split/03-07.png" alt="" class="out-icon" aria-hidden="true">
+        <div>
+          <div class="out-title">メール送信</div>
+          <div class="out-desc">診断結果をメールで受け取り、後から確認できます。スマホで診断してPCで見返すことも可能。</div>
+        </div>
+      </div>
+      <div class="out-card">
+        <img src="../assets/icons/split/03-08.png" alt="" class="out-icon" aria-hidden="true">
+        <div>
+          <div class="out-title">履歴機能</div>
+          <div class="out-desc">過去の診断結果を最大5件保存。変化を比較して最適なタイミングを見極めましょう。</div>
+        </div>
+      </div>
+      <div class="out-card">
+        <img src="../assets/icons/split/03-01.png" alt="" class="out-icon" aria-hidden="true">
+        <div>
+          <div class="out-title">対話（詳細相談）</div>
+          <div class="out-desc">診断結果についてAIに詳しく聞けます。具体的な機種選びや乗り換え手続きもサポートします。</div>
+        </div>
+      </div>
+      <div class="out-card">
+        <img src="../assets/icons/split/01-06.png" alt="" class="out-icon" aria-hidden="true">
+        <div>
+          <div class="out-title">複数デバイス対応</div>
+          <div class="out-desc">スマホ・PC・タブレットを同時診断して比較。家族全員分のデバイスをまとめて管理できます。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TRUST -->
+<div class="trust-wrap">
+  <div style="text-align:center;margin-bottom:28px">
+    <h2 style="font-size:18px;font-weight:800;color:#1e40af">安心・便利にご利用いただけます</h2>
+  </div>
+  <div class="trust-grid">
+    <div class="trust-item">
+      <img src="../assets/icons/split/02-03.png" alt="" class="trust-icon" aria-hidden="true">
+      <div class="trust-title">完全無料</div>
+      <div class="trust-desc">全機能が無料で利用できます。課金・会員登録は一切不要です。</div>
+    </div>
+    <div class="trust-item">
+      <img src="../assets/icons/split/02-07.png" alt="" class="trust-icon" aria-hidden="true">
+      <div class="trust-title">プライバシー保護</div>
+      <div class="trust-desc">入力データはブラウザ内で処理。外部サーバーへの送信はありません。</div>
+    </div>
+    <div class="trust-item">
+      <img src="../assets/icons/split/01-05.png" alt="" class="trust-icon" aria-hidden="true">
+      <div class="trust-title">ブラウザで使える</div>
+      <div class="trust-desc">アプリインストール不要。スマホ・PC・タブレットのブラウザですぐに利用できます。</div>
+    </div>
+    <div class="trust-item">
+      <img src="../assets/icons/split/01-01.png" alt="" class="trust-icon" aria-hidden="true">
+      <div class="trust-title">全デバイス診断対応</div>
+      <div class="trust-desc">スマホ・ノートPC・タブレット・デスクトップPC、すべての診断に対応しています。</div>
+    </div>
+    <div class="trust-item">
+      <img src="../assets/icons/split/01-07.png" alt="" class="trust-icon" aria-hidden="true">
+      <div class="trust-title">複数デバイス一括診断</div>
+      <div class="trust-desc">家族全員分のデバイスを一度に診断して比較。買い替え優先順位を明確にします。</div>
+    </div>
+  </div>
+</div>
+
+<!-- PHOTO GALLERY -->
+<div style="padding:28px 20px;background:#fff">
+  <div style="max-width:1100px;margin:0 auto;display:grid;grid-template-columns:repeat(4,1fr);gap:10px">
+    <img src="../assets/photos/photo_20.jpg" alt="" style="width:100%;height:130px;object-fit:cover;border-radius:10px" loading="lazy">
+    <img src="../assets/photos/photo_21.jpg" alt="" style="width:100%;height:130px;object-fit:cover;border-radius:10px" loading="lazy">
+    <img src="../assets/photos/photo_22.jpg" alt="" style="width:100%;height:130px;object-fit:cover;border-radius:10px" loading="lazy">
+    <img src="../assets/photos/photo_07.jpg" alt="" style="width:100%;height:130px;object-fit:cover;border-radius:10px" loading="lazy">
+  </div>
+</div>
+
+<!-- FAQ -->
+<section class="sec sec-bg" id="faq">
+  <div class="inner">
+    <div class="sec-hd">
+      <div class="sec-lbl">FAQ</div>
+      <h2 class="sec-title">よくある質問</h2>
+    </div>
+    <div class="faq-inner">
+      <details class="faq">
+        <summary>スマホとPCのどちらの診断にも使えますか？ <span>▼</span></summary>
+        <p>はい、スマートフォン・タブレット・ノートPC・デスクトップPCのすべてに対応しています。複数デバイスを同時に診断して、どちらを優先的に買い替えるべきかも比較できます。</p>
+      </details>
+      <details class="faq">
+        <summary>スマホ・PCは何年で買い替えるのが目安ですか？ <span>▼</span></summary>
+        <p>iPhoneは約5〜6年、Androidは約3〜4年がOSサポートの目安です。PCはWindowsで約5〜7年、Macで約7〜8年が一般的です。ただし使用頻度・用途・症状によって最適なタイミングは異なります。本ツールで総合的に診断しましょう。</p>
+      </details>
+      <details class="faq">
+        <summary>格安SIM乗り換えと端末同時購入はお得ですか？ <span>▼</span></summary>
+        <p>MNP（番号ポータビリティ）を使って格安SIMへ乗り換えると、端末代が大幅割引になるキャンペーンを実施している場合があります。IIJmio・楽天モバイル・mineo等では数万円引きになることも。通信費も月3,000〜8,000円程度の節約が期待できます。</p>
+      </details>
+      <details class="faq">
+        <summary>診断スコア（0〜100点）はどう読み取ればよいですか？ <span>▼</span></summary>
+        <p>70点以上：今すぐ買い替えを検討 / 45〜69点：半年以内に計画的な買い替えを推奨 / 20〜44点：1年以内に準備 / 20点未満：まだ大丈夫（現状維持で節約対応が有効）です。</p>
+      </details>
+      <details class="faq">
+        <summary>入力データは保存・送信されますか？ <span>▼</span></summary>
+        <p>いいえ。すべての処理はお使いのブラウザ内で完結します。外部サーバーへのデータ送信は一切行われません。安心してご利用ください。</p>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER CTA -->
+<section class="footer-cta">
+  <img src="../assets/photos/photo_05.jpg" alt="" class="fcta-bg" aria-hidden="true" loading="lazy">
+  <div class="fcta-overlay" aria-hidden="true"></div>
+  <div class="fcta-content">
+    <span class="fcta-badge">最短1分で完了</span>
+    <h2 class="fcta-title">あなたのデバイスの最適な<br>買い替え時期を今すぐ診断しましょう！</h2>
+    <p class="fcta-sub">バッテリー・動作・年数から緊急度をスコア化。<br>複数デバイス対応・格安SIM節約シミュレーション付き。</p>
+    <a href="../" class="fcta-btn">今すぐ診断する →</a>
+    <p class="fcta-note">無料・会員登録不要・ブラウザで完結</p>
+    <div class="fcta-photos">
+      <img src="../assets/photos/photo_20.jpg" alt="" loading="lazy">
+      <img src="../assets/photos/photo_21.jpg" alt="" loading="lazy">
+      <img src="../assets/photos/photo_22.jpg" alt="" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div style="margin-bottom:8px">
+    <a href="../">サービスページ</a> ·
+    <a href="../privacy-policy.html">プライバシーポリシー</a> ·
+    <a href="../contact.html">お問い合わせ</a>
+  </div>
+  <p>© 2025 AppADayCreator | <a href="https://tech-and-brace.co.jp/" rel="noopener noreferrer">Tech&amp;Brace</a></p>
+</footer>
+
+<script>
+document.querySelectorAll('details.faq').forEach(function(d){
+  d.addEventListener('toggle',function(){
+    var s=d.querySelector('summary span');
+    if(s) s.textContent=d.open?'▲':'▼';
+  });
+});
+</script>
+</body>
+</html>
