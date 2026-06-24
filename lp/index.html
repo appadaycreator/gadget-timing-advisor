@@ -110,10 +110,13 @@ img{max-width:100%;height:auto;display:block}
 
 /* STEPS */
 .steps-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
-.step-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);overflow:hidden}
+.step-card{background:#fff;border-radius:16px;box-shadow:var(--shadow);overflow:hidden;border-top:3px solid transparent}
+.step-card:nth-child(1){border-top-color:#f97316}
+.step-card:nth-child(2){border-top-color:#ef4444}
+.step-card:nth-child(3){border-top-color:#10b981}
 .step-photo{width:100%;height:160px;object-fit:cover}
 .step-body{padding:20px}
-.step-num{display:inline-flex;align-items:center;justify-content:center;width:30px;height:30px;border-radius:50%;background:var(--primary);color:#fff;font-size:13px;font-weight:800;margin-bottom:10px}
+.step-num{display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:linear-gradient(135deg,#f97316,#ef4444);color:#fff;font-size:15px;font-weight:900;margin-bottom:10px;box-shadow:0 4px 14px rgba(249,115,22,.4)}
 .step-title{font-size:14px;font-weight:700;color:var(--text);margin-bottom:6px}
 .step-desc{font-size:12px;color:var(--text-light);line-height:1.7}
 @media(max-width:760px){.steps-grid{grid-template-columns:1fr;max-width:480px;margin:0 auto}}
@@ -303,9 +306,21 @@ footer a{color:#6b7280}
             <img src="../assets/photos/photo_06.jpg" alt="iPhone" class="device-thumb">
             <div class="device-info">
               <div class="device-name">iPhone 13</div>
-              <div class="device-sub">2021年モデル</div>
+              <div class="device-sub">2021年 · 3年使用</div>
+              <div style="display:flex;flex-direction:column;gap:2px;margin-top:5px">
+                <div style="display:flex;align-items:center;gap:3px">
+                  <span style="font-size:8px;color:#9ca3af;width:34px;flex-shrink:0">バッテリ</span>
+                  <div style="flex:1;height:4px;background:#fee2e2;border-radius:2px"><div style="height:100%;width:70%;background:#ef4444;border-radius:2px"></div></div>
+                  <span style="font-size:8px;color:#ef4444;margin-left:2px">70%</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:3px">
+                  <span style="font-size:8px;color:#9ca3af;width:34px;flex-shrink:0">動作</span>
+                  <div style="flex:1;height:4px;background:#fef3c7;border-radius:2px"><div style="height:100%;width:75%;background:#f59e0b;border-radius:2px"></div></div>
+                  <span style="font-size:8px;color:#f59e0b;margin-left:2px">75%</span>
+                </div>
+              </div>
             </div>
-            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0">
               <div class="score-badge-c score-badge-r">78<span class="u">点</span></div>
               <div style="font-size:9px;color:#ef4444;font-weight:700">今すぐ🔴</div>
             </div>
@@ -314,9 +329,21 @@ footer a{color:#6b7280}
             <img src="../assets/photos/photo_07.jpg" alt="MacBook" class="device-thumb">
             <div class="device-info">
               <div class="device-name">MacBook Air M1</div>
-              <div class="device-sub">2020年モデル</div>
+              <div class="device-sub">2020年 · 4年使用</div>
+              <div style="display:flex;flex-direction:column;gap:2px;margin-top:5px">
+                <div style="display:flex;align-items:center;gap:3px">
+                  <span style="font-size:8px;color:#9ca3af;width:34px;flex-shrink:0">バッテリ</span>
+                  <div style="flex:1;height:4px;background:#dbeafe;border-radius:2px"><div style="height:100%;width:85%;background:#3b82f6;border-radius:2px"></div></div>
+                  <span style="font-size:8px;color:#3b82f6;margin-left:2px">85%</span>
+                </div>
+                <div style="display:flex;align-items:center;gap:3px">
+                  <span style="font-size:8px;color:#9ca3af;width:34px;flex-shrink:0">動作</span>
+                  <div style="flex:1;height:4px;background:#d1fae5;border-radius:2px"><div style="height:100%;width:95%;background:#10b981;border-radius:2px"></div></div>
+                  <span style="font-size:8px;color:#10b981;margin-left:2px">95%</span>
+                </div>
+              </div>
             </div>
-            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px;flex-shrink:0">
               <div class="score-badge-c score-badge-y">54<span class="u">点</span></div>
               <div style="font-size:9px;color:#d97706;font-weight:700">半年以内🟡</div>
             </div>
@@ -350,34 +377,73 @@ footer a{color:#6b7280}
     </div>
     <div class="features-grid">
       <div class="feat-card">
-        <div class="feat-icon-bg c-blue"><img src="../assets/icons/split/01-03.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+          <div class="feat-icon-bg c-blue"><img src="../assets/icons/split/01-03.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
+          <span style="font-size:18px;font-weight:900;color:#3b82f6;line-height:1">4<span style="font-size:10px;font-weight:600">種類</span></span>
+        </div>
         <div class="feat-title">スマホだけでなくPC診断</div>
         <div class="feat-desc">スマートフォン・ノートPC・タブレット・デスクトップまで、あらゆるガジェットの買い替えタイミングを診断できます。</div>
+        <div style="margin-top:8px;display:flex;gap:4px;flex-wrap:wrap">
+          <span style="font-size:9px;padding:2px 7px;border-radius:8px;background:#dbeafe;color:#1e40af;font-weight:600">📱 スマホ</span>
+          <span style="font-size:9px;padding:2px 7px;border-radius:8px;background:#dbeafe;color:#1e40af;font-weight:600">💻 PC</span>
+          <span style="font-size:9px;padding:2px 7px;border-radius:8px;background:#dbeafe;color:#1e40af;font-weight:600">📟 タブレット</span>
+        </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon-bg c-green"><img src="../assets/icons/split/01-06.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+          <div class="feat-icon-bg c-green"><img src="../assets/icons/split/01-06.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
+          <span style="font-size:18px;font-weight:900;color:#10b981;line-height:1">5<span style="font-size:10px;font-weight:600">台同時</span></span>
+        </div>
         <div class="feat-title">複数デバイス同時診断・比較</div>
         <div class="feat-desc">スマホとPCを同時に診断して比較。どちらを先に買い替えるべきか優先順位を明確にします。</div>
+        <div style="margin-top:8px;display:flex;gap:4px;flex-wrap:wrap">
+          <span style="font-size:9px;padding:2px 7px;border-radius:8px;background:#d1fae5;color:#065f46;font-weight:600">✅ 優先順位判定</span>
+          <span style="font-size:9px;padding:2px 7px;border-radius:8px;background:#d1fae5;color:#065f46;font-weight:600">📊 比較グラフ</span>
+        </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon-bg c-yellow"><img src="../assets/icons/split/02-04.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+          <div class="feat-icon-bg c-yellow"><img src="../assets/icons/split/02-04.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
+          <span style="font-size:18px;font-weight:900;color:#d97706;line-height:1">3<span style="font-size:10px;font-weight:600">パターン</span></span>
+        </div>
         <div class="feat-title">買い替え資金シミュレーション</div>
         <div class="feat-desc">買い替えに必要な資金を試算。分割払い・一括払い・下取り込みの月々の負担額を比較できます。</div>
+        <div style="margin-top:8px;display:flex;gap:4px;flex-wrap:wrap">
+          <span style="font-size:9px;padding:2px 7px;border-radius:8px;background:#fef3c7;color:#92400e;font-weight:600">💰 一括/分割/下取</span>
+        </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon-bg c-red"><img src="../assets/icons/split/02-06.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+          <div class="feat-icon-bg c-red"><img src="../assets/icons/split/02-06.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
+          <span style="font-size:18px;font-weight:900;color:#ef4444;line-height:1">最大<span style="font-size:12px;font-weight:900">¥8万</span></span>
+        </div>
         <div class="feat-title">下取り価格の相場確認</div>
         <div class="feat-desc">現在の端末の下取り相場を機種・年式から推計。最もお得な売却タイミングを提案します。</div>
+        <div style="margin-top:8px;display:flex;gap:4px;flex-wrap:wrap">
+          <span style="font-size:9px;padding:2px 7px;border-radius:8px;background:#fee2e2;color:#991b1b;font-weight:600">📈 市場価格連動</span>
+        </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon-bg c-orange"><img src="../assets/icons/split/02-05.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+          <div class="feat-icon-bg c-orange"><img src="../assets/icons/split/02-05.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
+          <span style="font-size:18px;font-weight:900;color:#f97316;line-height:1">月<span style="font-size:12px;font-weight:900">¥3千</span>節約</span>
+        </div>
         <div class="feat-title">格安SIMに乗り換えによる節約可能性</div>
         <div class="feat-desc">大手キャリアから格安SIMへ乗り換えた場合の月次節約額を計算。年間で数万円の節約効果を可視化します。</div>
+        <div style="margin-top:8px;display:flex;gap:4px;flex-wrap:wrap">
+          <span style="font-size:9px;padding:2px 7px;border-radius:8px;background:#ffedd5;color:#9a3412;font-weight:600">🏷 IIJmio/楽天等</span>
+        </div>
       </div>
       <div class="feat-card">
-        <div class="feat-icon-bg c-purple"><img src="../assets/icons/split/01-08.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
+        <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:4px">
+          <div class="feat-icon-bg c-purple"><img src="../assets/icons/split/01-08.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
+          <span style="font-size:18px;font-weight:900;color:#7c3aed;line-height:1">10<span style="font-size:10px;font-weight:600">メーカー</span></span>
+        </div>
         <div class="feat-title">メーカー別買い替えサイクル分析</div>
         <div class="feat-desc">Apple・Samsung・Xperia等のメーカー別サポート期間と発売サイクルを分析。長期的に最適な機種選びをサポートします。</div>
+        <div style="margin-top:8px;display:flex;gap:4px;flex-wrap:wrap">
+          <span style="font-size:9px;padding:2px 7px;border-radius:8px;background:#ede9fe;color:#4c1d95;font-weight:600">🍎 Apple/Samsung/Sony</span>
+        </div>
       </div>
     </div>
   </div>
@@ -439,7 +505,7 @@ footer a{color:#6b7280}
 <section class="sec" id="sample">
   <div class="inner">
     <div class="sec-hd">
-      <div class="sec-lbl">SAMPLE RESULT</div>
+      <div class="sec-lbl red">SAMPLE RESULT</div>
       <h2 class="sec-title">診断結果サンプル</h2>
       <p class="sec-sub">このような診断結果が表示されます</p>
     </div>
@@ -460,6 +526,15 @@ footer a{color:#6b7280}
         <div style="margin-top:14px">
           <img src="../assets/photos/photo_14.jpg" alt="" style="width:72px;height:72px;border-radius:50%;object-fit:cover;border:3px solid #bfdbfe;margin:0 auto" loading="lazy">
           <div style="font-size:10px;color:#9ca3af;margin-top:6px">総合診断スコア</div>
+        </div>
+        <!-- Score range bar -->
+        <div style="margin-top:14px;width:100%">
+          <div style="height:10px;border-radius:5px;background:linear-gradient(to right,#3b82f6,#10b981,#f59e0b,#ef4444);margin-bottom:4px;position:relative">
+            <div style="position:absolute;left:78%;top:-6px;width:3px;height:22px;background:#1f2937;border-radius:2px"></div>
+          </div>
+          <div style="display:flex;justify-content:space-between;font-size:8px;color:#6b7280;margin-bottom:8px">
+            <span>0</span><span>20</span><span>45</span><span>70</span><span>100</span>
+          </div>
         </div>
         <div class="score-legend">
           <div class="legend-item r">🔴 70〜：今すぐ</div>
@@ -559,9 +634,22 @@ footer a{color:#6b7280}
 <section class="sec sec-bg" id="simulation">
   <div class="inner">
     <div class="sec-hd">
-      <div class="sec-lbl">SIMULATION</div>
+      <div class="sec-lbl green">SIMULATION</div>
       <h2 class="sec-title">節約シミュレーション</h2>
       <p class="sec-sub">買い替え費用と通信費の節約効果を合わせてシミュレーションします</p>
+    </div>
+    <!-- 節約ハイライトバナー -->
+    <div style="background:linear-gradient(135deg,#fef3c7,#fde68a);border:2px solid #f59e0b;border-radius:16px;padding:18px 24px;margin-bottom:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px">
+      <div>
+        <div style="font-size:11px;font-weight:700;color:#92400e;margin-bottom:4px">🎉 格安SIM乗り換え＋下取り利用で</div>
+        <div style="font-size:30px;font-weight:900;color:#92400e;line-height:1">最大 ¥69,600 <span style="font-size:18px">節約！</span></div>
+        <div style="font-size:11px;color:#b45309;margin-top:4px">通信費＋端末代節約の合計（年間試算）</div>
+      </div>
+      <div style="text-align:center">
+        <div style="font-size:10px;color:#b45309;font-weight:600">分割払いなら</div>
+        <div style="font-size:22px;font-weight:900;color:#92400e;line-height:1.2">月々¥2,950〜</div>
+        <a href="../" style="display:inline-block;margin-top:8px;background:#f59e0b;color:#fff;padding:8px 20px;border-radius:10px;font-size:12px;font-weight:800;box-shadow:0 4px 12px rgba(245,158,11,.4)">詳しく計算する →</a>
+      </div>
     </div>
     <div class="sim-grid">
       <div class="sim-card red-accent">
@@ -602,9 +690,30 @@ footer a{color:#6b7280}
         <span class="sim-t-amt">¥69,600</span>
       </div>
     </div>
-    <div style="text-align:center;margin-top:18px;font-size:13px;color:#6b7280">
-      分割払いの場合 月々 <strong style="color:var(--primary)">¥2,950〜</strong>
-      <a href="../" style="display:inline-block;margin-left:14px;background:var(--primary);color:#fff;padding:9px 20px;border-radius:8px;font-size:13px;font-weight:700">詳しく計算する →</a>
+    <!-- キャリア比較ミニテーブル -->
+    <div style="background:#fff;border-radius:14px;padding:18px 20px;box-shadow:var(--shadow);margin-top:18px">
+      <div style="font-size:12px;font-weight:700;color:var(--text);margin-bottom:12px">📱 格安SIM乗り換え月額比較（例）</div>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center">
+        <div style="background:#fee2e2;border-radius:10px;padding:10px 8px">
+          <div style="font-size:10px;color:#ef4444;font-weight:700;margin-bottom:4px">大手3キャリア</div>
+          <div style="font-size:20px;font-weight:900;color:#ef4444">¥7,980</div>
+          <div style="font-size:9px;color:#9ca3af;margin-top:2px">/月（スタンダード）</div>
+        </div>
+        <div style="background:#f0fdf4;border-radius:10px;padding:10px 8px">
+          <div style="font-size:10px;color:#10b981;font-weight:700;margin-bottom:4px">IIJmio（例）</div>
+          <div style="font-size:20px;font-weight:900;color:#10b981">¥5,800</div>
+          <div style="font-size:9px;color:#9ca3af;margin-top:2px">/月（15GBプラン）</div>
+        </div>
+        <div style="background:#eff6ff;border-radius:10px;padding:10px 8px">
+          <div style="font-size:10px;color:#2563eb;font-weight:700;margin-bottom:4px">節約効果</div>
+          <div style="font-size:20px;font-weight:900;color:#2563eb">¥2,180</div>
+          <div style="font-size:9px;color:#10b981;margin-top:2px;font-weight:700">月々の節約額</div>
+        </div>
+      </div>
+      <div style="margin-top:12px;text-align:center;font-size:11px;color:#6b7280">
+        ※各社プランにより異なります。無料シミュレーションで正確な試算を確認できます。
+        <a href="../" style="display:inline-block;margin-left:10px;background:var(--primary);color:#fff;padding:7px 18px;border-radius:8px;font-size:12px;font-weight:700">詳しく計算する →</a>
+      </div>
     </div>
   </div>
 </section>
@@ -613,50 +722,50 @@ footer a{color:#6b7280}
 <section class="sec" id="output">
   <div class="inner">
     <div class="sec-hd">
-      <div class="sec-lbl">OUTPUT & SHARE</div>
+      <div class="sec-lbl yellow">OUTPUT & SHARE</div>
       <h2 class="sec-title">結果の出力・共有機能</h2>
       <p class="sec-sub">診断結果をさまざまな形で保存・共有・活用できます</p>
     </div>
     <div class="output-grid">
-      <div class="out-card">
-        <img src="../assets/icons/split/03-06.png" alt="" class="out-icon" aria-hidden="true">
+      <div class="out-card" style="border-top:3px solid #3b82f6">
+        <div style="width:40px;height:40px;border-radius:10px;background:#dbeafe;display:flex;align-items:center;justify-content:center;flex-shrink:0"><img src="../assets/icons/split/03-06.png" alt="" style="width:26px;height:26px;object-fit:contain" aria-hidden="true"></div>
         <div>
-          <div class="out-title">SNS共有</div>
+          <div class="out-title">SNS共有 <span style="font-size:9px;background:#dbeafe;color:#1e40af;padding:1px 6px;border-radius:6px;font-weight:700;margin-left:4px">無料</span></div>
           <div class="out-desc">Twitter/XやLINEで診断結果をかんたんシェア。友だちへのアドバイスにも使えます。</div>
         </div>
       </div>
-      <div class="out-card">
-        <img src="../assets/icons/split/03-05.png" alt="" class="out-icon" aria-hidden="true">
+      <div class="out-card" style="border-top:3px solid #ef4444">
+        <div style="width:40px;height:40px;border-radius:10px;background:#fee2e2;display:flex;align-items:center;justify-content:center;flex-shrink:0"><img src="../assets/icons/split/03-05.png" alt="" style="width:26px;height:26px;object-fit:contain" aria-hidden="true"></div>
         <div>
-          <div class="out-title">PDF出力</div>
+          <div class="out-title">PDF出力 <span style="font-size:9px;background:#fee2e2;color:#991b1b;padding:1px 6px;border-radius:6px;font-weight:700;margin-left:4px">A4対応</span></div>
           <div class="out-desc">診断結果・節約シミュレーション・おすすめプランをPDFで保存。家族との相談資料に最適です。</div>
         </div>
       </div>
-      <div class="out-card">
-        <img src="../assets/icons/split/03-07.png" alt="" class="out-icon" aria-hidden="true">
+      <div class="out-card" style="border-top:3px solid #10b981">
+        <div style="width:40px;height:40px;border-radius:10px;background:#d1fae5;display:flex;align-items:center;justify-content:center;flex-shrink:0"><img src="../assets/icons/split/03-07.png" alt="" style="width:26px;height:26px;object-fit:contain" aria-hidden="true"></div>
         <div>
-          <div class="out-title">メール送信</div>
+          <div class="out-title">メール送信 <span style="font-size:9px;background:#d1fae5;color:#065f46;padding:1px 6px;border-radius:6px;font-weight:700;margin-left:4px">即時</span></div>
           <div class="out-desc">診断結果をメールで受け取り、後から確認できます。スマホで診断してPCで見返すことも可能。</div>
         </div>
       </div>
-      <div class="out-card">
-        <img src="../assets/icons/split/03-08.png" alt="" class="out-icon" aria-hidden="true">
+      <div class="out-card" style="border-top:3px solid #f59e0b">
+        <div style="width:40px;height:40px;border-radius:10px;background:#fef3c7;display:flex;align-items:center;justify-content:center;flex-shrink:0"><img src="../assets/icons/split/03-08.png" alt="" style="width:26px;height:26px;object-fit:contain" aria-hidden="true"></div>
         <div>
-          <div class="out-title">履歴機能</div>
+          <div class="out-title">履歴機能 <span style="font-size:9px;background:#fef3c7;color:#92400e;padding:1px 6px;border-radius:6px;font-weight:700;margin-left:4px">最大5件</span></div>
           <div class="out-desc">過去の診断結果を最大5件保存。変化を比較して最適なタイミングを見極めましょう。</div>
         </div>
       </div>
-      <div class="out-card">
-        <img src="../assets/icons/split/03-01.png" alt="" class="out-icon" aria-hidden="true">
+      <div class="out-card" style="border-top:3px solid #7c3aed">
+        <div style="width:40px;height:40px;border-radius:10px;background:#ede9fe;display:flex;align-items:center;justify-content:center;flex-shrink:0"><img src="../assets/icons/split/03-01.png" alt="" style="width:26px;height:26px;object-fit:contain" aria-hidden="true"></div>
         <div>
-          <div class="out-title">対話（詳細相談）</div>
+          <div class="out-title">AI詳細相談 <span style="font-size:9px;background:#ede9fe;color:#4c1d95;padding:1px 6px;border-radius:6px;font-weight:700;margin-left:4px">AI対応</span></div>
           <div class="out-desc">診断結果についてAIに詳しく聞けます。具体的な機種選びや乗り換え手続きもサポートします。</div>
         </div>
       </div>
-      <div class="out-card">
-        <img src="../assets/icons/split/01-06.png" alt="" class="out-icon" aria-hidden="true">
+      <div class="out-card" style="border-top:3px solid #f97316">
+        <div style="width:40px;height:40px;border-radius:10px;background:#ffedd5;display:flex;align-items:center;justify-content:center;flex-shrink:0"><img src="../assets/icons/split/01-06.png" alt="" style="width:26px;height:26px;object-fit:contain" aria-hidden="true"></div>
         <div>
-          <div class="out-title">複数デバイス対応</div>
+          <div class="out-title">複数デバイス対応 <span style="font-size:9px;background:#ffedd5;color:#9a3412;padding:1px 6px;border-radius:6px;font-weight:700;margin-left:4px">5台まで</span></div>
           <div class="out-desc">スマホ・PC・タブレットを同時診断して比較。家族全員分のデバイスをまとめて管理できます。</div>
         </div>
       </div>
@@ -667,31 +776,53 @@ footer a{color:#6b7280}
 <!-- TRUST -->
 <div class="trust-wrap">
   <div style="text-align:center;margin-bottom:28px">
+    <div style="display:inline-flex;align-items:center;gap:10px;background:#fff;border:1px solid #bfdbfe;border-radius:12px;padding:6px 16px;margin-bottom:12px">
+      <span style="font-size:11px;color:#1e40af;font-weight:700">✅ 会員登録不要</span>
+      <span style="color:#bfdbfe">|</span>
+      <span style="font-size:11px;color:#1e40af;font-weight:700">✅ 完全無料</span>
+      <span style="color:#bfdbfe">|</span>
+      <span style="font-size:11px;color:#1e40af;font-weight:700">✅ データ保存なし</span>
+    </div>
     <h2 style="font-size:18px;font-weight:800;color:#1e40af">安心・便利にご利用いただけます</h2>
   </div>
   <div class="trust-grid">
     <div class="trust-item">
-      <img src="../assets/icons/split/02-03.png" alt="" class="trust-icon" aria-hidden="true">
+      <div style="position:relative;width:52px;height:52px;margin:0 auto 10px">
+        <img src="../assets/icons/split/02-03.png" alt="" style="width:44px;height:44px;object-fit:contain;margin:0 auto" aria-hidden="true">
+        <span style="position:absolute;bottom:-4px;right:-6px;background:#10b981;color:#fff;font-size:9px;font-weight:800;padding:1px 5px;border-radius:6px">¥0</span>
+      </div>
       <div class="trust-title">完全無料</div>
       <div class="trust-desc">全機能が無料で利用できます。課金・会員登録は一切不要です。</div>
     </div>
     <div class="trust-item">
-      <img src="../assets/icons/split/02-07.png" alt="" class="trust-icon" aria-hidden="true">
+      <div style="position:relative;width:52px;height:52px;margin:0 auto 10px">
+        <img src="../assets/icons/split/02-07.png" alt="" style="width:44px;height:44px;object-fit:contain;margin:0 auto" aria-hidden="true">
+        <span style="position:absolute;bottom:-4px;right:-6px;background:#3b82f6;color:#fff;font-size:9px;font-weight:800;padding:1px 5px;border-radius:6px">100%</span>
+      </div>
       <div class="trust-title">プライバシー保護</div>
       <div class="trust-desc">入力データはブラウザ内で処理。外部サーバーへの送信はありません。</div>
     </div>
     <div class="trust-item">
-      <img src="../assets/icons/split/01-05.png" alt="" class="trust-icon" aria-hidden="true">
+      <div style="position:relative;width:52px;height:52px;margin:0 auto 10px">
+        <img src="../assets/icons/split/01-05.png" alt="" style="width:44px;height:44px;object-fit:contain;margin:0 auto" aria-hidden="true">
+        <span style="position:absolute;bottom:-4px;right:-6px;background:#f97316;color:#fff;font-size:9px;font-weight:800;padding:1px 5px;border-radius:6px">即使用</span>
+      </div>
       <div class="trust-title">ブラウザで使える</div>
       <div class="trust-desc">アプリインストール不要。スマホ・PC・タブレットのブラウザですぐに利用できます。</div>
     </div>
     <div class="trust-item">
-      <img src="../assets/icons/split/01-01.png" alt="" class="trust-icon" aria-hidden="true">
+      <div style="position:relative;width:52px;height:52px;margin:0 auto 10px">
+        <img src="../assets/icons/split/01-01.png" alt="" style="width:44px;height:44px;object-fit:contain;margin:0 auto" aria-hidden="true">
+        <span style="position:absolute;bottom:-4px;right:-6px;background:#ef4444;color:#fff;font-size:9px;font-weight:800;padding:1px 5px;border-radius:6px">4種</span>
+      </div>
       <div class="trust-title">全デバイス診断対応</div>
       <div class="trust-desc">スマホ・ノートPC・タブレット・デスクトップPC、すべての診断に対応しています。</div>
     </div>
     <div class="trust-item">
-      <img src="../assets/icons/split/01-07.png" alt="" class="trust-icon" aria-hidden="true">
+      <div style="position:relative;width:52px;height:52px;margin:0 auto 10px">
+        <img src="../assets/icons/split/01-07.png" alt="" style="width:44px;height:44px;object-fit:contain;margin:0 auto" aria-hidden="true">
+        <span style="position:absolute;bottom:-4px;right:-6px;background:#7c3aed;color:#fff;font-size:9px;font-weight:800;padding:1px 5px;border-radius:6px">5台</span>
+      </div>
       <div class="trust-title">複数デバイス一括診断</div>
       <div class="trust-desc">家族全員分のデバイスを一度に診断して比較。買い替え優先順位を明確にします。</div>
     </div>
@@ -707,6 +838,63 @@ footer a{color:#6b7280}
     <img src="../assets/photos/photo_07.jpg" alt="" style="width:100%;height:130px;object-fit:cover;border-radius:10px" loading="lazy">
   </div>
 </div>
+
+<!-- DEVICE CYCLE TABLE -->
+<section class="sec" style="padding:48px 20px;background:#fff">
+  <div class="inner">
+    <div class="sec-hd">
+      <div class="sec-lbl" style="color:#7c3aed">GUIDE</div>
+      <h2 class="sec-title">デバイス買い替えサイクル早見表</h2>
+      <p class="sec-sub">機種・メーカー別の推奨交換年数と主な判断基準</p>
+    </div>
+    <div style="overflow-x:auto">
+      <table style="width:100%;border-collapse:collapse;background:#fff;border-radius:14px;overflow:hidden;box-shadow:var(--shadow);font-size:13px">
+        <thead>
+          <tr style="background:linear-gradient(135deg,#1e40af,#2563eb);color:#fff">
+            <th style="padding:12px 16px;text-align:left;font-weight:700">デバイス種別</th>
+            <th style="padding:12px 16px;text-align:center;font-weight:700">推奨買い替え年数</th>
+            <th style="padding:12px 16px;text-align:center;font-weight:700">OSサポート期間</th>
+            <th style="padding:12px 16px;text-align:center;font-weight:700">判断ポイント</th>
+            <th style="padding:12px 16px;text-align:center;font-weight:700">緊急度</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid #e5e7eb">
+            <td style="padding:12px 16px;font-weight:700">📱 iPhone</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:800;color:#2563eb">5〜6年</td>
+            <td style="padding:12px 16px;text-align:center;color:#6b7280">約6〜7年</td>
+            <td style="padding:12px 16px;text-align:center;font-size:11px;color:#6b7280">バッテリー容量・OS非対応</td>
+            <td style="padding:12px 16px;text-align:center"><span style="background:#fee2e2;color:#ef4444;padding:3px 8px;border-radius:6px;font-size:10px;font-weight:700">6年超で高</span></td>
+          </tr>
+          <tr style="background:#f9fafb;border-bottom:1px solid #e5e7eb">
+            <td style="padding:12px 16px;font-weight:700">🤖 Android</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:800;color:#10b981">3〜4年</td>
+            <td style="padding:12px 16px;text-align:center;color:#6b7280">2〜5年（機種次第）</td>
+            <td style="padding:12px 16px;text-align:center;font-size:11px;color:#6b7280">OS更新停止・動作遅延</td>
+            <td style="padding:12px 16px;text-align:center"><span style="background:#fef3c7;color:#d97706;padding:3px 8px;border-radius:6px;font-size:10px;font-weight:700">4年超で中</span></td>
+          </tr>
+          <tr style="border-bottom:1px solid #e5e7eb">
+            <td style="padding:12px 16px;font-weight:700">💻 Windows PC</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:800;color:#f97316">5〜7年</td>
+            <td style="padding:12px 16px;text-align:center;color:#6b7280">約10年（Win11まで）</td>
+            <td style="padding:12px 16px;text-align:center;font-size:11px;color:#6b7280">動作速度・SSD/HDD劣化</td>
+            <td style="padding:12px 16px;text-align:center"><span style="background:#ffedd5;color:#9a3412;padding:3px 8px;border-radius:6px;font-size:10px;font-weight:700">7年超で中</span></td>
+          </tr>
+          <tr style="background:#f9fafb">
+            <td style="padding:12px 16px;font-weight:700">🍎 Mac</td>
+            <td style="padding:12px 16px;text-align:center;font-weight:800;color:#7c3aed">7〜8年</td>
+            <td style="padding:12px 16px;text-align:center;color:#6b7280">約7〜8年</td>
+            <td style="padding:12px 16px;text-align:center;font-size:11px;color:#6b7280">macOS非対応・バッテリー</td>
+            <td style="padding:12px 16px;text-align:center"><span style="background:#ede9fe;color:#4c1d95;padding:3px 8px;border-radius:6px;font-size:10px;font-weight:700">8年超で高</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div style="text-align:center;margin-top:20px">
+      <a href="../" class="btn-cta">あなたのデバイスを今すぐ診断する →</a>
+    </div>
+  </div>
+</section>
 
 <!-- FAQ -->
 <section class="sec sec-bg" id="faq">
