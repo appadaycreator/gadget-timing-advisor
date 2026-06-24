@@ -71,10 +71,14 @@ j=d.createElement(s),dl=l!="dataLayer"?"&l="+l:"";j.async=true;j.src=
   .progress-track { background: #dbeafe; border-radius: 9999px; height: 8px; }
   .progress-bar { background: #3b82f6; height: 8px; border-radius: 9999px; transition: width 0.4s ease; }
   .score-circle { width: 120px; height: 120px; border-radius: 50%; display: flex; align-items: center; justify-content: center; flex-direction: column; margin: 0 auto; }
-  .score-urgent { background: repeating-linear-gradient(45deg, #fee2e2, #fee2e2 10px, #fecaca 10px, #fecaca 12px); border: 4px solid #ef4444; }
-  .score-soon { background: repeating-linear-gradient(45deg, #fef3c7, #fef3c7 10px, #fcd34d 10px, #fcd34d 12px); border: 4px solid #f59e0b; }
-  .score-later { background: repeating-linear-gradient(45deg, #d1fae5, #d1fae5 10px, #a7f3d0 10px, #a7f3d0 12px); border: 4px solid #10b981; }
-  .score-ok { background: repeating-linear-gradient(45deg, #dbeafe, #dbeafe 10px, #bfdbfe 10px, #bfdbfe 12px); border: 4px solid #3b82f6; }
+  .score-urgent { background: linear-gradient(135deg, #ef4444, #dc2626); border: none; box-shadow: 0 8px 28px rgba(239,68,68,.45); }
+  .score-soon { background: linear-gradient(135deg, #f59e0b, #d97706); border: none; box-shadow: 0 8px 28px rgba(245,158,11,.45); }
+  .score-later { background: linear-gradient(135deg, #10b981, #059669); border: none; box-shadow: 0 8px 28px rgba(16,185,129,.45); }
+  .score-ok { background: linear-gradient(135deg, #3b82f6, #2563eb); border: none; box-shadow: 0 8px 28px rgba(59,130,246,.45); }
+  .score-urgent .text-3xl, .score-soon .text-3xl, .score-later .text-3xl, .score-ok .text-3xl { color: #fff !important; }
+  .score-urgent .text-2xl, .score-soon .text-2xl, .score-later .text-2xl, .score-ok .text-2xl { color: #fff !important; }
+  .score-urgent #score-label-small, .score-soon #score-label-small, .score-later #score-label-small, .score-ok #score-label-small { color: rgba(255,255,255,.9) !important; }
+  .score-circle .text-xs { color: rgba(255,255,255,.85) !important; }
   .aff-btn { display: block; width: 100%; border-radius: 0.75rem; padding: 0.875rem 1rem; font-weight: 700; text-align: center; text-decoration: none; font-size: 0.95rem; transition: all 0.2s; margin-bottom: 0.75rem; }
   .aff-btn:hover { transform: translateY(-1px); opacity: 0.92; }
   .tip-item { background: #eff6ff; border-left: 3px solid #2563eb; border-radius: 0 0.5rem 0.5rem 0; padding: 0.75rem 1rem; margin-bottom: 0.5rem; font-size: 0.9rem; color: #374151; }

@@ -220,6 +220,35 @@ footer{background:#1f2937;color:#9ca3af;padding:20px;text-align:center;font-size
 footer a{color:#6b7280}
 .btn-cta{display:inline-block;background:var(--primary);color:#fff;padding:12px 28px;border-radius:10px;font-size:14px;font-weight:700;transition:all .2s;box-shadow:0 4px 14px rgba(59,130,246,.3)}
 .btn-cta:hover{background:var(--primary-dark);transform:translateY(-2px)}
+
+/* === STEP 7 REFINEMENTS === */
+.feat-icon-bg{width:56px;height:56px;border-radius:14px;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.feat-icon-bg.c-blue{background:linear-gradient(135deg,#dbeafe,#bfdbfe)}
+.feat-icon-bg.c-red{background:linear-gradient(135deg,#fee2e2,#fecaca)}
+.feat-icon-bg.c-green{background:linear-gradient(135deg,#d1fae5,#a7f3d0)}
+.feat-icon-bg.c-yellow{background:linear-gradient(135deg,#fef3c7,#fde68a)}
+.feat-icon-bg.c-purple{background:linear-gradient(135deg,#ede9fe,#ddd6fe)}
+.feat-icon-bg.c-orange{background:linear-gradient(135deg,#ffedd5,#fed7aa)}
+.score-badge-c{width:48px;height:48px;border-radius:50%;display:flex;flex-direction:column;align-items:center;justify-content:center;font-size:17px;font-weight:900;line-height:1;flex-shrink:0;min-width:48px}
+.score-badge-c .u{font-size:8px;font-weight:400;margin-top:1px}
+.score-badge-r{background:#ef4444;color:#fff;box-shadow:0 3px 10px rgba(239,68,68,.4)}
+.score-badge-y{background:#f59e0b;color:#fff;box-shadow:0 3px 10px rgba(245,158,11,.4)}
+.price-sticker{display:inline-block;font-size:10px;font-weight:700;padding:2px 8px;border-radius:8px}
+.price-sticker-g{background:#dcfce7;color:#166534;border:1px solid #86efac}
+.price-sticker-r{background:#fee2e2;color:#dc2626;border:1px solid #fca5a5}
+.price-sticker-b{background:#dbeafe;color:#1e40af;border:1px solid #93c5fd}
+.sim-card.blue{background:linear-gradient(135deg,#1e3a8a,#1e40af,#2563eb)!important;box-shadow:0 8px 28px rgba(30,64,175,.4)!important;border:none!important}
+.sim-card.blue .sim-lbl{color:rgba(255,255,255,.85)!important;font-size:12px!important}
+.sim-card.blue .sim-amt{color:#fff!important;font-size:30px!important}
+.sim-card.blue .sim-sub{color:rgba(255,255,255,.8)!important}
+.sim-card.red-accent{border-top:3px solid #ef4444}
+.sim-card.green-accent{border-top:3px solid #10b981}
+.sim-t-item.highlight-total .sim-t-lbl{color:#1e40af;font-weight:700}
+.sim-t-item.highlight-total .sim-t-amt{font-size:24px!important;color:#1e40af!important}
+.gauge-inner-glow{position:absolute;inset:18px;border-radius:50%;background:radial-gradient(circle,rgba(239,68,68,.08),transparent 70%)}
+.sec-lbl.red{color:#ef4444}
+.sec-lbl.green{color:#10b981}
+.sec-lbl.yellow{color:#d97706}
 </style>
 </head>
 <body>
@@ -276,9 +305,9 @@ footer a{color:#6b7280}
               <div class="device-name">iPhone 13</div>
               <div class="device-sub">2021年モデル</div>
             </div>
-            <div style="text-align:right">
-              <div class="score-num-r" style="color:#ef4444">78 <small>点</small></div>
-              <div style="font-size:9px;color:#ef4444;font-weight:600">今すぐ</div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+              <div class="score-badge-c score-badge-r">78<span class="u">点</span></div>
+              <div style="font-size:9px;color:#ef4444;font-weight:700">今すぐ🔴</div>
             </div>
           </div>
           <div class="device-row">
@@ -287,16 +316,23 @@ footer a{color:#6b7280}
               <div class="device-name">MacBook Air M1</div>
               <div class="device-sub">2020年モデル</div>
             </div>
-            <div style="text-align:right">
-              <div class="score-num-r" style="color:#d97706">54 <small>点</small></div>
-              <div style="font-size:9px;color:#d97706;font-weight:600">半年以内</div>
+            <div style="display:flex;flex-direction:column;align-items:flex-end;gap:4px">
+              <div class="score-badge-c score-badge-y">54<span class="u">点</span></div>
+              <div style="font-size:9px;color:#d97706;font-weight:700">半年以内🟡</div>
             </div>
           </div>
           <div class="budget-box">
             <div class="budget-lbl">💰 買い替え予算計画（最安）</div>
-            <div class="budget-amt">¥32,480</div>
-            <div class="budget-note">節約可能額（2デバイス合計）</div>
-            <span class="budget-total">トータル年間節約 ¥69,600</span>
+            <div style="display:flex;align-items:center;gap:8px;margin-bottom:3px">
+              <div class="budget-amt">¥32,480</div>
+              <span class="price-sticker price-sticker-r" style="font-size:9px">最安</span>
+            </div>
+            <div style="display:flex;gap:6px;align-items:center;margin-bottom:4px">
+              <span style="font-size:10px;color:#6b7280;text-decoration:line-through">定価¥95,760</span>
+              <span class="price-sticker price-sticker-g" style="font-size:9px">¥63,280 OFF</span>
+            </div>
+            <div class="budget-note">格安SIM+下取り最大節約</div>
+            <span class="budget-total">🎯 年間節約合計 <strong>¥69,600</strong></span>
           </div>
         </div>
       </div>
@@ -314,32 +350,32 @@ footer a{color:#6b7280}
     </div>
     <div class="features-grid">
       <div class="feat-card">
-        <img src="../assets/icons/split/01-03.png" alt="" class="feat-icon" aria-hidden="true">
+        <div class="feat-icon-bg c-blue"><img src="../assets/icons/split/01-03.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
         <div class="feat-title">スマホだけでなくPC診断</div>
         <div class="feat-desc">スマートフォン・ノートPC・タブレット・デスクトップまで、あらゆるガジェットの買い替えタイミングを診断できます。</div>
       </div>
       <div class="feat-card">
-        <img src="../assets/icons/split/01-06.png" alt="" class="feat-icon" aria-hidden="true">
+        <div class="feat-icon-bg c-green"><img src="../assets/icons/split/01-06.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
         <div class="feat-title">複数デバイス同時診断・比較</div>
         <div class="feat-desc">スマホとPCを同時に診断して比較。どちらを先に買い替えるべきか優先順位を明確にします。</div>
       </div>
       <div class="feat-card">
-        <img src="../assets/icons/split/02-04.png" alt="" class="feat-icon" aria-hidden="true">
+        <div class="feat-icon-bg c-yellow"><img src="../assets/icons/split/02-04.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
         <div class="feat-title">買い替え資金シミュレーション</div>
         <div class="feat-desc">買い替えに必要な資金を試算。分割払い・一括払い・下取り込みの月々の負担額を比較できます。</div>
       </div>
       <div class="feat-card">
-        <img src="../assets/icons/split/02-06.png" alt="" class="feat-icon" aria-hidden="true">
+        <div class="feat-icon-bg c-red"><img src="../assets/icons/split/02-06.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
         <div class="feat-title">下取り価格の相場確認</div>
         <div class="feat-desc">現在の端末の下取り相場を機種・年式から推計。最もお得な売却タイミングを提案します。</div>
       </div>
       <div class="feat-card">
-        <img src="../assets/icons/split/02-05.png" alt="" class="feat-icon" aria-hidden="true">
+        <div class="feat-icon-bg c-orange"><img src="../assets/icons/split/02-05.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
         <div class="feat-title">格安SIMに乗り換えによる節約可能性</div>
         <div class="feat-desc">大手キャリアから格安SIMへ乗り換えた場合の月次節約額を計算。年間で数万円の節約効果を可視化します。</div>
       </div>
       <div class="feat-card">
-        <img src="../assets/icons/split/01-08.png" alt="" class="feat-icon" aria-hidden="true">
+        <div class="feat-icon-bg c-purple"><img src="../assets/icons/split/01-08.png" alt="" class="feat-icon" aria-hidden="true" style="width:32px;height:32px"></div>
         <div class="feat-title">メーカー別買い替えサイクル分析</div>
         <div class="feat-desc">Apple・Samsung・Xperia等のメーカー別サポート期間と発売サイクルを分析。長期的に最適な機種選びをサポートします。</div>
       </div>
@@ -410,12 +446,13 @@ footer a{color:#6b7280}
     <div class="sample-inner">
       <div style="text-align:center">
         <div class="gauge-wrap">
+          <div class="gauge-inner-glow"></div>
           <svg class="gauge-svg" width="160" height="160" viewBox="0 0 160 160">
-            <circle cx="80" cy="80" r="66" fill="none" stroke="#e5e7eb" stroke-width="14"/>
-            <circle cx="80" cy="80" r="66" fill="none" stroke="#ef4444" stroke-width="14" stroke-dasharray="329 415" stroke-dashoffset="0" stroke-linecap="round"/>
+            <circle cx="80" cy="80" r="66" fill="none" stroke="#fecaca" stroke-width="14"/>
+            <circle cx="80" cy="80" r="66" fill="none" stroke="#ef4444" stroke-width="16" stroke-dasharray="329 415" stroke-dashoffset="0" stroke-linecap="round" filter="drop-shadow(0 0 4px rgba(239,68,68,.5))"/>
           </svg>
           <div class="gauge-center">
-            <div class="gauge-score">78</div>
+            <div class="gauge-score" style="font-size:42px">78</div>
             <div class="gauge-max">/100点</div>
           </div>
         </div>
@@ -439,6 +476,7 @@ footer a{color:#6b7280}
             <div class="s-dev-info">
               <div class="s-dev-name">iPhone 13 (256GB)</div>
               <div class="s-dev-sub">2021年購入・3年使用</div>
+              <div style="margin-top:3px"><span class="price-sticker price-sticker-b" style="font-size:9px">下取 ¥78,400</span></div>
             </div>
             <div class="s-dev-bars">
               <div class="bar-row">
@@ -464,6 +502,7 @@ footer a{color:#6b7280}
             <div class="s-dev-info">
               <div class="s-dev-name">MacBook Air M1 (2020)</div>
               <div class="s-dev-sub">2020年購入・4年使用</div>
+              <div style="margin-top:3px"><span class="price-sticker price-sticker-g" style="font-size:9px">下取 ¥13,600</span></div>
             </div>
             <div class="s-dev-bars">
               <div class="bar-row">
@@ -525,20 +564,24 @@ footer a{color:#6b7280}
       <p class="sec-sub">買い替え費用と通信費の節約効果を合わせてシミュレーションします</p>
     </div>
     <div class="sim-grid">
-      <div class="sim-card">
-        <div class="sim-lbl">現在の毎月の支払い（格安SIM比較）</div>
-        <div class="sim-amt">¥7,980</div>
+      <div class="sim-card red-accent">
+        <div style="font-size:10px;font-weight:700;color:#ef4444;margin-bottom:4px">現在の支払い</div>
+        <div class="sim-lbl">毎月の支払い（格安SIM比較）</div>
+        <div class="sim-amt" style="color:#ef4444">¥7,980</div>
         <div class="sim-sub">スタンダードプラン（大手3キャリア）</div>
       </div>
-      <div class="sim-card">
+      <div class="sim-card green-accent">
+        <div style="font-size:10px;font-weight:700;color:#10b981;margin-bottom:4px">節約できる額</div>
         <div class="sim-lbl">格安SIM乗り換えで節約できる額</div>
         <div class="sim-amt" style="color:#10b981">¥2,180</div>
         <div class="sim-sub">月額節約（IIJmio比較・例）</div>
       </div>
       <div class="sim-card blue">
-        <div class="sim-lbl">年間トータル節約額</div>
+        <div style="font-size:10px;font-weight:700;color:rgba(255,255,255,.9);margin-bottom:4px">🎯 年間節約合計</div>
+        <div class="sim-lbl">トータル節約額</div>
         <div class="sim-amt">¥69,600</div>
         <div class="sim-sub">通信費＋端末代節約合計</div>
+        <div style="font-size:10px;color:rgba(255,255,255,.65);margin-top:6px">分割払い 月々¥2,950〜</div>
       </div>
     </div>
     <div class="sim-table">
@@ -554,8 +597,8 @@ footer a{color:#6b7280}
         <span class="sim-t-lbl">下取り価格</span>
         <span class="sim-t-amt">−¥78,400</span>
       </div>
-      <div class="sim-t-item total">
-        <span class="sim-t-lbl">トータル節約額（年間）</span>
+      <div class="sim-t-item total highlight-total">
+        <span class="sim-t-lbl">🎯 トータル節約額（年間）</span>
         <span class="sim-t-amt">¥69,600</span>
       </div>
     </div>
